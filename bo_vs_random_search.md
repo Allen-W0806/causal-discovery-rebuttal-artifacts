@@ -1,5 +1,6 @@
 # Fixed-Budget BO vs. Random Search on NC8
 
+Table: Fixed-budget comparison between Bayesian optimization and random search on NC8.
 | Eval Budget | Method | AUROC ↑ | AUPRC ↑ | F1 ↑ | SHD ↓ |
 |---:|---|---:|---:|---:|---:|
 | 200 | Ours (BO) | 0.767 ± 0.058 | 0.487 ± 0.122 | 0.525 ± 0.073 | 9.60 ± 3.85 |

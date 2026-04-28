@@ -1,7 +1,6 @@
 # Unified Baseline Results
 
-Results are reported as mean ± 95% confidence interval over replicas.  
-"–" indicates exceeded time limit, optimization failure, or inapplicability under the current benchmark protocol.
+Table: Unified comparison with additional baselines on NC8, ND8, and Finance.
 
 | Method | NC8 AUROC ↑ | NC8 AUPRC ↑ | ND8 AUROC ↑ | ND8 AUPRC ↑ | Finance AUROC ↑ | Finance AUPRC ↑ |
 |---|---:|---:|---:|---:|---:|---:|

@@ -25,20 +25,6 @@ sys.path.insert(0, str(LOGGING_DIR))
 from run_logger import RunLogger
 
 
-FIXED_INNER_ROUNDS = 10
-FIXED_INNER_LR = 1e-2
-FIXED_INNER_BATCH_SIZE = 0
-FIXED_INNER_OPTIMIZER = "adam"
-FIXED_META_UPDATE_EVERY = 5
-FIXED_META_HISTORY_SIZE = 256
-FIXED_META_HISTORY_ONLY = True
-FIXED_META_MODE = "recent_topB_replay"
-FIXED_META_BATCH_SIZE = 4
-FIXED_META_RECENT_WINDOW = 10
-FIXED_META_FALLBACK_STRATEGY = "replacement_then_hist"
-FIXED_META_INNER_ROUNDS = 1
-FIXED_META_INNER_LR = 5e-4
-FIXED_META_OUTER_LR = 3e-5
 
 
 def _default_exp_name(args, max_evals: int) -> str:
@@ -71,9 +57,10 @@ def main() -> None:
     parser.add_argument("--mlp_max_iter", type=int, default=50)
     parser.add_argument("--pretrain_epochs", type=int, default=50)
     parser.add_argument("--pretrain_avg_parents", type=float, default=3.0)
-    parser.add_argument("--inner_step_count", type=int, default=FIXED_INNER_ROUNDS)
-    parser.add_argument("--inner_lr", type=float, default=FIXED_INNER_LR)
-    parser.add_argument("--inner_batch_size", type=int, default=FIXED_INNER_BATCH_SIZE)
+    parser.add_argument("--inner_step_count", type=int, default=10)
+    parser.add_argument("--inner_lr", type=float, default=1e-2)
+    parser.add_argument("--inner_batch_size", type=int, default=0)
+    parser.add_argument("--inner_optimizer", type=str, default="adam", choices=["adam", "sgd"])
     parser.add_argument("--T", type=int, default=None)
     parser.add_argument("--d", type=int, default=0)
     parser.add_argument("--lambda_sparse", type=float, default=1.0)
@@ -95,23 +82,23 @@ def main() -> None:
     parser.add_argument("--device", type=str, default="")
     parser.add_argument("--plot", action="store_true", default=True)
     parser.add_argument("--no-plot", dest="plot", action="store_false")
-    parser.add_argument("--meta_update_every", type=int, default=FIXED_META_UPDATE_EVERY)
-    parser.add_argument("--meta_history_size", type=int, default=FIXED_META_HISTORY_SIZE)
-    parser.add_argument("--meta_batch_size", type=int, default=FIXED_META_BATCH_SIZE)
+    parser.add_argument("--meta_update_every", type=int, default=5)
+    parser.add_argument("--meta_history_size", type=int, default=256)
+    parser.add_argument("--meta_batch_size", type=int, default=4)
     parser.add_argument("--meta_batch_size_J", type=int, default=0)
-    parser.add_argument("--meta_history_only", action="store_true", default=FIXED_META_HISTORY_ONLY)
+    parser.add_argument("--meta_history_only", action="store_true", default=True)
     parser.add_argument("--no_meta_history_only", dest="meta_history_only", action="store_false")
-    parser.add_argument("--meta_recent_window", type=int, default=FIXED_META_RECENT_WINDOW)
+    parser.add_argument("--meta_recent_window", type=int, default=10)
     parser.add_argument("--mix_current_frac", type=float, default=0.0)
-    parser.add_argument("--meta_fallback_strategy", type=str, default=FIXED_META_FALLBACK_STRATEGY)
-    parser.add_argument("--meta_inner_step_count", type=int, default=FIXED_META_INNER_ROUNDS)
-    parser.add_argument("--meta_inner_lr", type=float, default=FIXED_META_INNER_LR)
-    parser.add_argument("--meta_outer_lr", type=float, default=FIXED_META_OUTER_LR)
+    parser.add_argument("--meta_fallback_strategy", type=str, default="replacement_then_hist")
+    parser.add_argument("--meta_inner_step_count", type=int, default=1)
+    parser.add_argument("--meta_inner_lr", type=float, default=5e-4)
+    parser.add_argument("--meta_outer_lr", type=float, default=3e-5)
     parser.add_argument("--meta_warmup_frac", type=float, default=0.0)
     parser.add_argument(
         "--meta_mode",
         type=str,
-        default=FIXED_META_MODE,
+        default="recent_topB_replay",
         choices=["recent_topB_replay", "random_history", "elite_history", "freeze_meta"],
     )
     parser.add_argument("--meta_elite_frac", type=float, default=0.2)
@@ -159,7 +146,7 @@ def main() -> None:
         inner_step_count=args.inner_step_count,
         inner_lr=args.inner_lr,
         inner_batch_size=args.inner_batch_size,
-        inner_optimizer=FIXED_INNER_OPTIMIZER,
+        inner_optimizer=args.inner_optimizer,
         pretrain_epochs=args.pretrain_epochs,
         pretrain_avg_parents=args.pretrain_avg_parents,
         seed=args.seed,

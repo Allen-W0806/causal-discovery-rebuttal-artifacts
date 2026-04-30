@@ -1,0 +1,14 @@
+export PYTHONPATH="${PYTHONPATH}:../"
+
+python run_grid_search.py  \
+  --experiment unicsl_lorenz96_0                 \
+  --model gvar                      \
+  --num-sim 5                       \
+  --K 8                             \
+  --num-hidden-layers 6             \
+  --hidden-layer-size 20            \
+  --num-epochs-1 1000                 \
+  --num-epochs-2 2000                 \
+  --initial-lr 0.005               \
+  --seed 0 \
+  --cuda-i 0

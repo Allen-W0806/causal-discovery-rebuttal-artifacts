@@ -1,0 +1,10 @@
+sample_id: replica_000
+dataset: nc8
+mode: latent
+AUROC: 0.949495
+AUPRC: 0.533333
+F1: 0.571429
+accuracy: 0.916667
+SHD: 3
+runtime_sec: 1540.152152
+threshold: 0.0381723828614

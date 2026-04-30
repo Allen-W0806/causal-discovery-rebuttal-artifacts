@@ -1,0 +1,53 @@
+# Planning-only template for future CUTS+ batch runs.
+# This file is not executed directly; fill in method-specific command lines before use.
+
+baseline_name: CUTS+
+datasets_root: ../../datasets
+results_root: ../results
+
+non_latent:
+  nc8:
+    dataset_entry: ../../datasets/nc8/raw
+    input_view: full_raw_csv
+    results_dir: ../results/non_latent/nc8
+    expected_latent_count: 0
+  simulated_EEG_68_static_v2:
+    dataset_entry: ../../datasets/simulated_EEG_68_static_v2/raw
+    input_view: full_68_node_sequences
+    results_dir: ../results/non_latent/simulated_EEG_68_static_v2
+    expected_latent_count: 0
+  simulated_fMRI:
+    dataset_entry: ../../datasets/simulated_fMRI/raw
+    input_view: full_sequence_X_npy
+    results_dir: ../results/non_latent/simulated_fMRI
+    expected_latent_count: 0
+
+latent:
+  nc8:
+    dataset_entry: ../../datasets/nc8/raw
+    input_view: mask_hidden_variables_before_run
+    results_dir: ../results/latent/nc8
+    expected_latent_count: 2
+    latent_indices: [0, 5]
+    latent_indices_status: defined_in_current_benchmark_prep
+  simulated_EEG_68_static_v2:
+    dataset_entry: ../../datasets/simulated_EEG_68_static_v2/raw
+    input_view: mask_hidden_variables_before_run
+    results_dir: ../results/latent/simulated_EEG_68_static_v2
+    expected_latent_count: 4
+    latent_indices: [4, 12, 42, 46]
+    latent_indices_status: confirmed_in_dataset_metadata
+  simulated_fMRI:
+    dataset_entry: ../../datasets/simulated_fMRI/raw
+    input_view: mask_hidden_variables_before_run
+    results_dir: ../results/latent/simulated_fMRI
+    expected_latent_count: 4
+    latent_indices: [64, 65, 66, 67]
+    latent_variable_names: [Z0, Z1, Z2, Z3]
+    latent_indices_status: confirmed_in_dataset_metadata
+
+notes:
+  - Fill in method-specific command lines before running.
+  - Keep all future outputs under results_root.
+  - CUTS+ device selection is automatic at runtime (cuda if available, else cpu).
+  - If a future dataset lacks an explicit latent manifest, set latent_indices to TBD.

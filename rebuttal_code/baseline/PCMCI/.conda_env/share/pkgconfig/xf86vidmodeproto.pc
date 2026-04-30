@@ -1,0 +1,7 @@
+prefix=/storage/home/ydk297/projects/meta_causal_discovery/tigramite/.conda_env
+includedir=${prefix}/include
+ 
+Name: XF86VidModeProto
+Description: XF86VidMode extension headers
+Version: 2.3.1
+Cflags: -I${includedir}

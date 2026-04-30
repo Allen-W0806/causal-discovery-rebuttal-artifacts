@@ -1,0 +1,13 @@
+export PYTHONPATH="${PYTHONPATH}:../"
+
+python run_grid_search.py  \
+  --experiment unicsl_finance                 \
+  --num-sim 8                       \
+  --K 6                             \
+  --num-hidden-layers 8             \
+  --hidden-layer-size 12            \
+  --num-epochs-1 1000                 \
+  --num-epochs-2 10000                 \
+  --initial-lr 0.0003               \
+  --seed 0 \
+  --cuda-i 5

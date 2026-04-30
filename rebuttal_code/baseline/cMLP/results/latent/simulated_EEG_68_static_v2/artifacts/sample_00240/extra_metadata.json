@@ -1,0 +1,18 @@
+{
+  "activation": "relu",
+  "actual_cuda_used": true,
+  "actual_device": "cuda",
+  "check_every": 100,
+  "hidden": [
+    20
+  ],
+  "lag": 3,
+  "lam": 0.05,
+  "lam_ridge": 0.01,
+  "learning_rate": 0.05,
+  "lookback": 5,
+  "max_iter": 3000,
+  "penalty": "H",
+  "requested_cuda": true,
+  "seed": 0
+}

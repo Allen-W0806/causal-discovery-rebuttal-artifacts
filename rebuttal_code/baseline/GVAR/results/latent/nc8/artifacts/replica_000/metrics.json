@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.9166666666666666,
+  "auprc": 0.5333333333333333,
+  "auroc": 0.9494949494949495,
+  "dataset": "nc8",
+  "f1": 0.5714285714285715,
+  "ground_truth_edges": 3,
+  "hidden_variable_count": 2,
+  "mode": "latent",
+  "native_binary_accuracy": 0.8055555555555556,
+  "native_binary_f1": 0.4615384615384615,
+  "native_binary_shd": 7,
+  "num_variables": 6,
+  "observed_variable_count": 6,
+  "predicted_edges": 4,
+  "runtime_sec": 1540.1521516796201,
+  "sample_id": "replica_000",
+  "sequence_length": 2000,
+  "shd": 3,
+  "split": null,
+  "threshold": 0.03817238286137581
+}

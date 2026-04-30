@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.924072265625,
+  "auprc": 0.07593016058942402,
+  "auroc": 0.5079238999774877,
+  "dataset": "simulated_EEG_68_static_v2",
+  "f1": 0.0,
+  "ground_truth_edges": 311,
+  "hidden_variable_count": 4,
+  "mode": "latent",
+  "native_binary_accuracy": 0.872802734375,
+  "native_binary_f1": 0.06463195691202872,
+  "native_binary_shd": 499,
+  "num_variables": 64,
+  "observed_variable_count": 64,
+  "predicted_edges": 0,
+  "runtime_sec": 54.15426134224981,
+  "sample_id": "sample_00264",
+  "sequence_length": 1000,
+  "shd": 311,
+  "split": "test",
+  "threshold": 300.00000000000006
+}

@@ -1,0 +1,10 @@
+sample_id: sample_00257
+dataset: simulated_EEG_68_static_v2
+mode: latent
+AUROC: 0.576148
+AUPRC: 0.134245
+F1: 0.000000
+accuracy: 0.924072
+SHD: 311
+runtime_sec: 1.534031
+threshold: 0.0532341003418

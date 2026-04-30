@@ -1,0 +1,17 @@
+PCMCI baseline setup for NC8
+Repository URL: https://github.com/jakobrunge/tigramite.git
+Commit hash: ff3ff13e1481073b8c5833a6fde1c304627a208e
+Workspace path: /storage/home/ydk297/projects/meta_causal_discovery/PCMCI
+Setup date: 2026-04-18
+Isolated environment: /storage/home/ydk297/projects/meta_causal_discovery/PCMCI/.conda_env
+
+Notes:
+- Smoke-test method targets PCMCI with ParCorr(significance="analytic").
+- Minimal runtime deps needed in practice for this path were:
+  numpy, scipy, six, joblib
+- The upstream Python package name remains `tigramite`; only the workspace
+  checkout folder was renamed to `PCMCI`.
+- After the repo folder rename, the environment `pip` entrypoint was repaired
+  and the editable install was refreshed for the new `PCMCI` path.
+- The NC8 source chosen for this smoke test is:
+  /storage/home/ydk297/projects/meta_causal_discovery/data/nc8

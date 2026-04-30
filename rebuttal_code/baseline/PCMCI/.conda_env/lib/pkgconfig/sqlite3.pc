@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/storage/home/ydk297/projects/meta_causal_discovery/tigramite/.conda_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.51.2
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lm -lz -ldl -lpthread 
+Cflags: -I${includedir}

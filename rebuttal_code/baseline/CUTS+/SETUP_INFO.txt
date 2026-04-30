@@ -1,0 +1,22 @@
+Repository URL: https://github.com/jarrycyx/UNN
+Local path: /storage/home/ydk297/projects/meta_causal_discovery/base_model/CUTS+
+Clone status: success
+Upstream git history: preserved via git clone
+Origin remote:
+  https://github.com/jarrycyx/UNN
+Checked out commit:
+  2212724cce8a7752db564089a7537fecedb0e36d
+CUTS+ confirmed in repository: yes
+CUTS+ primary subtree:
+  CUTS_Plus/
+Main CUTS+ implementation files:
+  CUTS_Plus/cuts_plus.py
+  CUTS_Plus/model/cuts_plus_net.py
+Likely future experiment/config starting points:
+  CUTS_Plus/README.md
+  CUTS_Plus/cuts_plus.py
+  CUTS_Plus/opt/lorenz_example.yaml
+Experiments run in this setup round:
+  none
+Notes:
+  No training, evaluation, smoke tests, dependency installs, result folders, or NC8 data changes were performed.

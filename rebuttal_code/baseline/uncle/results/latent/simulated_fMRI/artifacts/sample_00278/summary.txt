@@ -1,0 +1,10 @@
+sample_id: sample_00278
+dataset: simulated_fMRI
+mode: latent
+AUROC: 0.640774
+AUPRC: 0.065421
+F1: 0.000000
+accuracy: 0.964844
+SHD: 144
+runtime_sec: 0.475250
+threshold: 0.0361747741699

@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.9444444444444444,
+      "mean": 0.9277777777777778,
+      "min": 0.9166666666666666,
+      "std": 0.015214515486254621
+    },
+    "auprc": {
+      "max": 0.6666666666666666,
+      "mean": 0.5999999999999999,
+      "min": 0.5,
+      "std": 0.09128709291752768
+    },
+    "auroc": {
+      "max": 0.9494949494949495,
+      "mean": 0.9454545454545455,
+      "min": 0.9393939393939394,
+      "std": 0.005532551085910743
+    },
+    "f1": {
+      "max": 0.5,
+      "mean": 0.44000000000000006,
+      "min": 0.4,
+      "std": 0.0547722557505166
+    },
+    "runtime_sec": {
+      "max": 23.393617371097207,
+      "mean": 23.06424890179187,
+      "min": 22.84229725599289,
+      "std": 0.21314417054946277
+    },
+    "runtime_sec_total": 115.32124450895935,
+    "shd": {
+      "max": 3.0,
+      "mean": 2.6,
+      "min": 2.0,
+      "std": 0.5477225575051661
+    },
+    "threshold_accuracy": 0.9277777777777778,
+    "wall_clock_sec_total": 120.61219345219433
+  },
+  "baseline": "cMLP",
+  "dataset": "nc8",
+  "loss_curve_note": null,
+  "mode": "latent",
+  "native_binary_available": true,
+  "num_samples": 5,
+  "split": null,
+  "threshold": {
+    "accuracy": 0.9277777777777778,
+    "num_edges": 180,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 0.3606680929660797
+  }
+}

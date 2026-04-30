@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.924072265625,
+      "mean": 0.924072265625,
+      "min": 0.924072265625,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.0928055951947721,
+      "mean": 0.08077850809377154,
+      "min": 0.07209471893851659,
+      "std": 0.004553476867069561
+    },
+    "auroc": {
+      "max": 0.5596605317147141,
+      "mean": 0.5238807995684438,
+      "min": 0.48630785763739925,
+      "std": 0.020008791204500033
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 59.866468586958945,
+      "mean": 56.72511550179915,
+      "min": 54.10086935060099,
+      "std": 1.52820375745169
+    },
+    "runtime_sec_total": 2269.004620071966,
+    "shd": {
+      "max": 311.0,
+      "mean": 311.0,
+      "min": 311.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.924072265625,
+    "wall_clock_sec_total": 2273.364912045654
+  },
+  "baseline": "PCMCI",
+  "dataset": "simulated_EEG_68_static_v2",
+  "loss_curve_note": "PCMCI is constraint-based and does not expose a meaningful training-loss curve.",
+  "mode": "latent",
+  "native_binary_available": true,
+  "num_samples": 40,
+  "split": "test",
+  "threshold": {
+    "accuracy": 0.924072265625,
+    "num_edges": 163840,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 300.00000000000006
+  }
+}

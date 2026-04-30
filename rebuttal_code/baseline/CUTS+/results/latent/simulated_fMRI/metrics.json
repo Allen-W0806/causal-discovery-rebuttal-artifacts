@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.96484375,
+      "mean": 0.96484375,
+      "min": 0.96484375,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.13092091392713603,
+      "mean": 0.10794630086425848,
+      "min": 0.09392076870586322,
+      "std": 0.0070059419310525665
+    },
+    "auroc": {
+      "max": 0.7854699097503374,
+      "mean": 0.7486504020467837,
+      "min": 0.7175594987067027,
+      "std": 0.016887413626413814
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 17.374928046949208,
+      "mean": 10.49764759350568,
+      "min": 10.161795627791435,
+      "std": 1.045098862923744
+    },
+    "runtime_sec_total": 524.882379675284,
+    "shd": {
+      "max": 144.0,
+      "mean": 144.0,
+      "min": 144.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.96484375,
+    "wall_clock_sec_total": 526.9188132160343
+  },
+  "baseline": "CUTS+",
+  "dataset": "simulated_fMRI",
+  "loss_curve_note": null,
+  "mode": "latent",
+  "native_binary_available": false,
+  "num_samples": 50,
+  "split": "test",
+  "threshold": {
+    "accuracy": 0.96484375,
+    "num_edges": 204800,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 0.39964994788169866
+  }
+}

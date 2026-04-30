@@ -1,0 +1,54 @@
+{
+  "dataset": "nc8",
+  "graph_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_struct_4.csv",
+  "ground_truth_shape": [
+    6,
+    6
+  ],
+  "hidden_indices": [
+    0,
+    5
+  ],
+  "mode": "latent",
+  "notes": [
+    "NC8 latent mode masks variables at indices [0, 5]."
+  ],
+  "observed_indices": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7
+  ],
+  "original_variable_names": [
+    "x",
+    "y",
+    "z",
+    "w",
+    "o",
+    "a",
+    "b",
+    "c"
+  ],
+  "sample_id": "replica_004",
+  "sample_metadata": {
+    "num_variables": 6,
+    "replica_index": 4,
+    "sequence_length": 2000
+  },
+  "sequence_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_data_4.csv",
+  "sequence_shape": [
+    2000,
+    6
+  ],
+  "split": null,
+  "variable_names": [
+    "y",
+    "z",
+    "w",
+    "o",
+    "b",
+    "c"
+  ]
+}

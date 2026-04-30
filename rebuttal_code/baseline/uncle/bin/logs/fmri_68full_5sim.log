@@ -1,0 +1,392 @@
+2026-04-20 23:19:40.665 | INFO     | experimental_utils:run_unicsl:338 - ===== LOGGER =====
+2026-04-20 23:19:40.665 | INFO     | experimental_utils:run_unicsl:339 - logger path: unicsl_logs/unicsl_fmri_68full_4latent/unicsl_fmri_68full_4latent.log
+2026-04-20 23:19:40.665 | INFO     | experimental_utils:run_unicsl:357 - {'learning_rate': 1e-05, 'pred_len': 1, 'lag': 1, 'eval_var_batch_size': 8, 'reconstruction_epochs': 1000, 'joint_epochs': 2000, 'stop_epoch': 3000, 'cuda_device': 'cuda:0', 'print_freq': 50, 'n_encoder_layers': 8, 'n_encoder_channels': 12, 'n_kernel_size': 6}
+2026-04-20 23:19:40.666 | INFO     | experimental_utils:run_unicsl:366 - data length: 240
+2026-04-20 23:19:40.666 | INFO     | experimental_utils:run_unicsl:368 - ***** SEED 0 *****
+/storage/home/ydk297/miniconda3/envs/uncle_clean/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-04-20 23:19:40.944 | INFO     | experimental_utils:run_unicsl:375 - training model params
+2026-04-20 23:19:42.192 | INFO     | experimental_utils:run_unicsl:389 - RECONSTRUCTION STAGE
+2026-04-20 23:19:42.676 | INFO     | experimental_utils:run_unicsl:457 - [   1] train: 3.31800 0.00000 2.97647 0.34152 | val: 2.255064 |  0
+2026-04-20 23:19:44.343 | INFO     | experimental_utils:run_unicsl:457 - [  51] train: 2.73315 0.00000 2.39131 0.34184 | val: 1.842422 |  0
+2026-04-20 23:19:46.008 | INFO     | experimental_utils:run_unicsl:457 - [ 101] train: 2.35243 0.00000 2.01031 0.34212 | val: 1.581208 |  0
+2026-04-20 23:19:47.674 | INFO     | experimental_utils:run_unicsl:457 - [ 151] train: 2.09212 0.00000 1.74978 0.34234 | val: 1.403367 |  0
+2026-04-20 23:19:49.337 | INFO     | experimental_utils:run_unicsl:457 - [ 201] train: 1.90661 0.00000 1.56411 0.34250 | val: 1.272784 |  0
+2026-04-20 23:19:50.994 | INFO     | experimental_utils:run_unicsl:457 - [ 251] train: 1.75554 0.00000 1.41295 0.34259 | val: 1.173946 |  0
+2026-04-20 23:19:52.653 | INFO     | experimental_utils:run_unicsl:457 - [ 301] train: 1.65745 0.00000 1.31486 0.34259 | val: 1.100163 |  0
+2026-04-20 23:19:54.318 | INFO     | experimental_utils:run_unicsl:457 - [ 351] train: 1.56968 0.00000 1.22717 0.34251 | val: 1.046277 |  0
+2026-04-20 23:19:55.984 | INFO     | experimental_utils:run_unicsl:457 - [ 401] train: 1.50556 0.00000 1.16323 0.34233 | val: 1.007209 |  0
+2026-04-20 23:19:57.645 | INFO     | experimental_utils:run_unicsl:457 - [ 451] train: 1.45211 0.00000 1.11006 0.34204 | val: 0.979737 |  0
+2026-04-20 23:19:59.317 | INFO     | experimental_utils:run_unicsl:457 - [ 501] train: 1.41334 0.00000 1.07169 0.34166 | val: 0.961807 |  0
+2026-04-20 23:20:00.976 | INFO     | experimental_utils:run_unicsl:457 - [ 551] train: 1.38402 0.00000 1.04283 0.34118 | val: 0.950582 |  0
+2026-04-20 23:20:02.643 | INFO     | experimental_utils:run_unicsl:457 - [ 601] train: 1.35829 0.00000 1.01765 0.34064 | val: 0.943287 |  0
+2026-04-20 23:20:04.303 | INFO     | experimental_utils:run_unicsl:457 - [ 651] train: 1.34042 0.00000 1.00038 0.34004 | val: 0.937784 |  0
+2026-04-20 23:20:05.964 | INFO     | experimental_utils:run_unicsl:457 - [ 701] train: 1.32491 0.00000 0.98550 0.33941 | val: 0.932478 |  0
+2026-04-20 23:20:07.624 | INFO     | experimental_utils:run_unicsl:457 - [ 751] train: 1.30913 0.00000 0.97038 0.33875 | val: 0.926745 |  0
+2026-04-20 23:20:09.290 | INFO     | experimental_utils:run_unicsl:457 - [ 801] train: 1.29375 0.00000 0.95566 0.33809 | val: 0.920283 |  0
+2026-04-20 23:20:10.949 | INFO     | experimental_utils:run_unicsl:457 - [ 851] train: 1.28841 0.00000 0.95098 0.33743 | val: 0.912836 |  0
+2026-04-20 23:20:12.610 | INFO     | experimental_utils:run_unicsl:457 - [ 901] train: 1.27428 0.00000 0.93751 0.33677 | val: 0.904483 |  0
+2026-04-20 23:20:14.271 | INFO     | experimental_utils:run_unicsl:457 - [ 951] train: 1.25880 0.00000 0.92268 0.33611 | val: 0.895429 |  0
+2026-04-20 23:20:15.890 | INFO     | experimental_utils:run_unicsl:457 - [1000] train: 1.25066 0.00000 0.91517 0.33548 | val: 0.885892 |  0
+2026-04-20 23:20:15.890 | INFO     | experimental_utils:run_unicsl:461 - JOINT STAGE
+2026-04-20 23:20:16.016 | INFO     | experimental_utils:run_unicsl:534 - [1001] train: 2.25590 0.99741 0.91501 0.34347 | val: 0.996455 |  0
+2026-04-20 23:20:18.741 | INFO     | experimental_utils:run_unicsl:534 - [1051] train: 2.24108 0.99532 0.90317 0.34258 | val: 0.993617 |  0
+2026-04-20 23:20:21.463 | INFO     | experimental_utils:run_unicsl:534 - [1101] train: 2.22394 0.99491 0.88729 0.34174 | val: 0.990854 |  0
+2026-04-20 23:20:24.189 | INFO     | experimental_utils:run_unicsl:534 - [1151] train: 2.20497 0.99061 0.87344 0.34092 | val: 0.988042 |  0
+2026-04-20 23:20:26.930 | INFO     | experimental_utils:run_unicsl:534 - [1201] train: 2.18544 0.98662 0.85866 0.34015 | val: 0.985014 |  0
+2026-04-20 23:20:29.655 | INFO     | experimental_utils:run_unicsl:534 - [1251] train: 2.17252 0.98427 0.84884 0.33941 | val: 0.981667 |  0
+2026-04-20 23:20:32.384 | INFO     | experimental_utils:run_unicsl:534 - [1301] train: 2.15236 0.98054 0.83311 0.33871 | val: 0.977933 |  0
+2026-04-20 23:20:35.099 | INFO     | experimental_utils:run_unicsl:534 - [1351] train: 2.12963 0.97357 0.81801 0.33805 | val: 0.973805 |  0
+2026-04-20 23:20:37.863 | INFO     | experimental_utils:run_unicsl:534 - [1401] train: 2.10215 0.96894 0.79578 0.33742 | val: 0.969196 |  0
+2026-04-20 23:20:40.591 | INFO     | experimental_utils:run_unicsl:534 - [1451] train: 2.08739 0.96550 0.78506 0.33683 | val: 0.964113 |  0
+2026-04-20 23:20:43.313 | INFO     | experimental_utils:run_unicsl:534 - [1501] train: 2.06816 0.96017 0.77173 0.33626 | val: 0.958312 |  0
+2026-04-20 23:20:46.040 | INFO     | experimental_utils:run_unicsl:534 - [1551] train: 2.03402 0.95386 0.74442 0.33574 | val: 0.951381 |  0
+2026-04-20 23:20:48.775 | INFO     | experimental_utils:run_unicsl:534 - [1601] train: 2.01635 0.94493 0.73617 0.33524 | val: 0.943855 |  0
+2026-04-20 23:20:51.511 | INFO     | experimental_utils:run_unicsl:534 - [1651] train: 1.99168 0.93848 0.71843 0.33477 | val: 0.935760 |  0
+2026-04-20 23:20:54.244 | INFO     | experimental_utils:run_unicsl:534 - [1701] train: 1.96322 0.92861 0.70029 0.33433 | val: 0.926911 |  0
+2026-04-20 23:20:56.968 | INFO     | experimental_utils:run_unicsl:534 - [1751] train: 1.93782 0.92078 0.68313 0.33391 | val: 0.917261 |  0
+2026-04-20 23:20:59.691 | INFO     | experimental_utils:run_unicsl:534 - [1801] train: 1.90462 0.90970 0.66141 0.33351 | val: 0.906721 |  0
+2026-04-20 23:21:02.409 | INFO     | experimental_utils:run_unicsl:534 - [1851] train: 1.86686 0.89876 0.63496 0.33314 | val: 0.895358 |  0
+2026-04-20 23:21:05.121 | INFO     | experimental_utils:run_unicsl:534 - [1901] train: 1.84127 0.88697 0.62151 0.33279 | val: 0.882803 |  0
+2026-04-20 23:21:07.838 | INFO     | experimental_utils:run_unicsl:534 - [1951] train: 1.81388 0.87183 0.60960 0.33246 | val: 0.869320 |  0
+2026-04-20 23:21:10.554 | INFO     | experimental_utils:run_unicsl:534 - [2001] train: 1.78781 0.85845 0.59722 0.33213 | val: 0.854939 |  0
+2026-04-20 23:21:13.269 | INFO     | experimental_utils:run_unicsl:534 - [2051] train: 1.75167 0.84913 0.57072 0.33182 | val: 0.840135 |  0
+2026-04-20 23:21:15.983 | INFO     | experimental_utils:run_unicsl:534 - [2101] train: 1.72627 0.83303 0.56175 0.33150 | val: 0.824771 |  0
+2026-04-20 23:21:18.701 | INFO     | experimental_utils:run_unicsl:534 - [2151] train: 1.69624 0.81747 0.54757 0.33119 | val: 0.809196 |  0
+2026-04-20 23:21:21.421 | INFO     | experimental_utils:run_unicsl:534 - [2201] train: 1.66678 0.80667 0.52923 0.33088 | val: 0.793664 |  0
+2026-04-20 23:21:24.142 | INFO     | experimental_utils:run_unicsl:534 - [2251] train: 1.63825 0.79006 0.51763 0.33057 | val: 0.778108 |  0
+2026-04-20 23:21:26.857 | INFO     | experimental_utils:run_unicsl:534 - [2301] train: 1.60487 0.77373 0.50088 0.33025 | val: 0.763043 |  0
+2026-04-20 23:21:29.575 | INFO     | experimental_utils:run_unicsl:534 - [2351] train: 1.56888 0.75618 0.48277 0.32992 | val: 0.748031 |  0
+2026-04-20 23:21:32.291 | INFO     | experimental_utils:run_unicsl:534 - [2401] train: 1.55406 0.74313 0.48135 0.32959 | val: 0.733821 |  0
+2026-04-20 23:21:35.006 | INFO     | experimental_utils:run_unicsl:534 - [2451] train: 1.52571 0.72948 0.46698 0.32925 | val: 0.720101 |  0
+2026-04-20 23:21:37.717 | INFO     | experimental_utils:run_unicsl:534 - [2501] train: 1.49833 0.71699 0.45245 0.32889 | val: 0.707086 |  0
+2026-04-20 23:21:40.441 | INFO     | experimental_utils:run_unicsl:534 - [2551] train: 1.47636 0.70584 0.44199 0.32853 | val: 0.694562 |  0
+2026-04-20 23:21:43.160 | INFO     | experimental_utils:run_unicsl:534 - [2601] train: 1.44989 0.69169 0.43005 0.32816 | val: 0.682447 |  0
+2026-04-20 23:21:45.879 | INFO     | experimental_utils:run_unicsl:534 - [2651] train: 1.43408 0.68205 0.42425 0.32778 | val: 0.670762 |  0
+2026-04-20 23:21:48.594 | INFO     | experimental_utils:run_unicsl:534 - [2701] train: 1.41071 0.66997 0.41334 0.32740 | val: 0.659151 |  0
+2026-04-20 23:21:51.310 | INFO     | experimental_utils:run_unicsl:534 - [2751] train: 1.39117 0.65822 0.40595 0.32701 | val: 0.647178 |  0
+2026-04-20 23:21:54.022 | INFO     | experimental_utils:run_unicsl:534 - [2801] train: 1.36825 0.64335 0.39830 0.32661 | val: 0.635796 |  0
+2026-04-20 23:21:56.735 | INFO     | experimental_utils:run_unicsl:534 - [2851] train: 1.34041 0.62935 0.38486 0.32621 | val: 0.624328 |  0
+2026-04-20 23:21:59.447 | INFO     | experimental_utils:run_unicsl:534 - [2901] train: 1.32071 0.61906 0.37585 0.32580 | val: 0.613367 |  0
+2026-04-20 23:22:02.157 | INFO     | experimental_utils:run_unicsl:534 - [2951] train: 1.29994 0.60720 0.36736 0.32538 | val: 0.602592 |  0
+2026-04-20 23:22:04.816 | INFO     | experimental_utils:run_unicsl:534 - [3000] train: 1.28548 0.59946 0.36106 0.32497 | val: 0.592545 |  0
+2026-04-20 23:22:04.993 | INFO     | experimental_utils:run_unicsl:338 - ===== LOGGER =====
+2026-04-20 23:22:04.993 | INFO     | experimental_utils:run_unicsl:339 - logger path: unicsl_logs/unicsl_fmri_68full_4latent/unicsl_fmri_68full_4latent.log
+2026-04-20 23:22:04.993 | INFO     | experimental_utils:run_unicsl:357 - {'learning_rate': 1e-05, 'pred_len': 1, 'lag': 1, 'eval_var_batch_size': 8, 'reconstruction_epochs': 1000, 'joint_epochs': 2000, 'stop_epoch': 3000, 'cuda_device': 'cuda:0', 'print_freq': 50, 'n_encoder_layers': 8, 'n_encoder_channels': 12, 'n_kernel_size': 6}
+2026-04-20 23:22:04.993 | INFO     | experimental_utils:run_unicsl:366 - data length: 240
+2026-04-20 23:22:04.993 | INFO     | experimental_utils:run_unicsl:368 - ***** SEED 0 *****
+/storage/home/ydk297/miniconda3/envs/uncle_clean/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-04-20 23:22:05.011 | INFO     | experimental_utils:run_unicsl:375 - training model params
+2026-04-20 23:22:05.012 | INFO     | experimental_utils:run_unicsl:389 - RECONSTRUCTION STAGE
+2026-04-20 23:22:05.049 | INFO     | experimental_utils:run_unicsl:457 - [   1] train: 3.27308 0.00000 2.93156 0.34152 | val: 2.211119 |  0
+2026-04-20 23:22:06.715 | INFO     | experimental_utils:run_unicsl:457 - [  51] train: 2.68706 0.00000 2.34522 0.34184 | val: 1.804809 |  0
+2026-04-20 23:22:08.382 | INFO     | experimental_utils:run_unicsl:457 - [ 101] train: 2.30836 0.00000 1.96624 0.34212 | val: 1.550446 |  0
+2026-04-20 23:22:10.044 | INFO     | experimental_utils:run_unicsl:457 - [ 151] train: 2.06055 0.00000 1.71821 0.34234 | val: 1.378898 |  0
+2026-04-20 23:22:11.707 | INFO     | experimental_utils:run_unicsl:457 - [ 201] train: 1.87593 0.00000 1.53343 0.34250 | val: 1.254380 |  0
+2026-04-20 23:22:13.373 | INFO     | experimental_utils:run_unicsl:457 - [ 251] train: 1.73652 0.00000 1.39392 0.34260 | val: 1.161170 |  0
+2026-04-20 23:22:15.037 | INFO     | experimental_utils:run_unicsl:457 - [ 301] train: 1.62994 0.00000 1.28732 0.34262 | val: 1.091801 |  0
+2026-04-20 23:22:16.702 | INFO     | experimental_utils:run_unicsl:457 - [ 351] train: 1.55022 0.00000 1.20768 0.34255 | val: 1.041122 |  0
+2026-04-20 23:22:18.368 | INFO     | experimental_utils:run_unicsl:457 - [ 401] train: 1.48622 0.00000 1.14384 0.34238 | val: 1.004320 |  0
+2026-04-20 23:22:20.035 | INFO     | experimental_utils:run_unicsl:457 - [ 451] train: 1.44114 0.00000 1.09902 0.34212 | val: 0.979540 |  0
+2026-04-20 23:22:21.700 | INFO     | experimental_utils:run_unicsl:457 - [ 501] train: 1.40269 0.00000 1.06093 0.34176 | val: 0.963636 |  0
+2026-04-20 23:22:23.370 | INFO     | experimental_utils:run_unicsl:457 - [ 551] train: 1.36987 0.00000 1.02856 0.34131 | val: 0.953108 |  0
+2026-04-20 23:22:25.035 | INFO     | experimental_utils:run_unicsl:457 - [ 601] train: 1.34993 0.00000 1.00914 0.34079 | val: 0.945607 |  0
+2026-04-20 23:22:26.717 | INFO     | experimental_utils:run_unicsl:457 - [ 651] train: 1.33515 0.00000 0.99494 0.34021 | val: 0.939553 |  0
+2026-04-20 23:22:28.391 | INFO     | experimental_utils:run_unicsl:457 - [ 701] train: 1.31405 0.00000 0.97445 0.33960 | val: 0.933836 |  0
+2026-04-20 23:22:30.122 | INFO     | experimental_utils:run_unicsl:457 - [ 751] train: 1.30394 0.00000 0.96498 0.33897 | val: 0.927623 |  0
+2026-04-20 23:22:31.787 | INFO     | experimental_utils:run_unicsl:457 - [ 801] train: 1.29195 0.00000 0.95362 0.33832 | val: 0.920519 |  0
+2026-04-20 23:22:33.446 | INFO     | experimental_utils:run_unicsl:457 - [ 851] train: 1.27248 0.00000 0.93481 0.33767 | val: 0.912444 |  0
+2026-04-20 23:22:35.111 | INFO     | experimental_utils:run_unicsl:457 - [ 901] train: 1.26310 0.00000 0.92608 0.33702 | val: 0.903401 |  0
+2026-04-20 23:22:36.785 | INFO     | experimental_utils:run_unicsl:457 - [ 951] train: 1.25779 0.00000 0.92140 0.33638 | val: 0.893537 |  0
+2026-04-20 23:22:38.422 | INFO     | experimental_utils:run_unicsl:457 - [1000] train: 1.24216 0.00000 0.90640 0.33576 | val: 0.883170 |  0
+2026-04-20 23:22:38.422 | INFO     | experimental_utils:run_unicsl:461 - JOINT STAGE
+2026-04-20 23:22:38.477 | INFO     | experimental_utils:run_unicsl:534 - [1001] train: 2.25355 1.00834 0.90146 0.34375 | val: 1.010137 |  0
+2026-04-20 23:22:41.209 | INFO     | experimental_utils:run_unicsl:534 - [1051] train: 2.23733 1.00641 0.88806 0.34285 | val: 1.006785 |  0
+2026-04-20 23:22:43.940 | INFO     | experimental_utils:run_unicsl:534 - [1101] train: 2.22497 1.00427 0.87870 0.34200 | val: 1.003511 |  0
+2026-04-20 23:22:46.671 | INFO     | experimental_utils:run_unicsl:534 - [1151] train: 2.20279 1.00052 0.86109 0.34118 | val: 1.000252 |  0
+2026-04-20 23:22:49.403 | INFO     | experimental_utils:run_unicsl:534 - [1201] train: 2.18268 0.99688 0.84542 0.34039 | val: 0.996879 |  0
+2026-04-20 23:22:52.128 | INFO     | experimental_utils:run_unicsl:534 - [1251] train: 2.16770 0.99270 0.83536 0.33963 | val: 0.993338 |  0
+2026-04-20 23:22:54.852 | INFO     | experimental_utils:run_unicsl:534 - [1301] train: 2.14999 0.98993 0.82115 0.33891 | val: 0.989539 |  0
+2026-04-20 23:22:57.577 | INFO     | experimental_utils:run_unicsl:534 - [1351] train: 2.12910 0.98448 0.80640 0.33822 | val: 0.985396 |  0
+2026-04-20 23:23:00.300 | INFO     | experimental_utils:run_unicsl:534 - [1401] train: 2.10748 0.98017 0.78974 0.33756 | val: 0.980622 |  0
+2026-04-20 23:23:03.024 | INFO     | experimental_utils:run_unicsl:534 - [1451] train: 2.08144 0.97252 0.77198 0.33694 | val: 0.974873 |  0
+2026-04-20 23:23:05.756 | INFO     | experimental_utils:run_unicsl:534 - [1501] train: 2.06381 0.96757 0.75988 0.33636 | val: 0.968632 |  0
+2026-04-20 23:23:08.488 | INFO     | experimental_utils:run_unicsl:534 - [1551] train: 2.03581 0.96186 0.73814 0.33581 | val: 0.961765 |  0
+2026-04-20 23:23:11.217 | INFO     | experimental_utils:run_unicsl:534 - [1601] train: 2.01030 0.95450 0.72049 0.33530 | val: 0.954151 |  0
+2026-04-20 23:23:13.959 | INFO     | experimental_utils:run_unicsl:534 - [1651] train: 1.98542 0.94534 0.70525 0.33483 | val: 0.945650 |  0
+2026-04-20 23:23:16.679 | INFO     | experimental_utils:run_unicsl:534 - [1701] train: 1.94957 0.93360 0.68159 0.33438 | val: 0.936292 |  0
+2026-04-20 23:23:19.412 | INFO     | experimental_utils:run_unicsl:534 - [1751] train: 1.92179 0.92406 0.66376 0.33396 | val: 0.926015 |  0
+2026-04-20 23:23:22.140 | INFO     | experimental_utils:run_unicsl:534 - [1801] train: 1.89329 0.91515 0.64457 0.33357 | val: 0.914935 |  0
+2026-04-20 23:23:24.876 | INFO     | experimental_utils:run_unicsl:534 - [1851] train: 1.86791 0.90472 0.63000 0.33318 | val: 0.903024 |  0
+2026-04-20 23:23:27.601 | INFO     | experimental_utils:run_unicsl:534 - [1901] train: 1.82770 0.88920 0.60569 0.33282 | val: 0.890379 |  0
+2026-04-20 23:23:30.328 | INFO     | experimental_utils:run_unicsl:534 - [1951] train: 1.79930 0.87542 0.59142 0.33246 | val: 0.876966 |  0
+2026-04-20 23:23:33.057 | INFO     | experimental_utils:run_unicsl:534 - [2001] train: 1.77498 0.86432 0.57855 0.33211 | val: 0.863178 |  0
+2026-04-20 23:23:35.803 | INFO     | experimental_utils:run_unicsl:534 - [2051] train: 1.73458 0.84673 0.55609 0.33176 | val: 0.848991 |  0
+2026-04-20 23:23:38.535 | INFO     | experimental_utils:run_unicsl:534 - [2101] train: 1.71399 0.84062 0.54195 0.33142 | val: 0.834518 |  0
+2026-04-20 23:23:41.262 | INFO     | experimental_utils:run_unicsl:534 - [2151] train: 1.68190 0.81988 0.53094 0.33107 | val: 0.819679 |  0
+2026-04-20 23:23:43.992 | INFO     | experimental_utils:run_unicsl:534 - [2201] train: 1.64177 0.80424 0.50681 0.33073 | val: 0.804647 |  0
+2026-04-20 23:23:46.721 | INFO     | experimental_utils:run_unicsl:534 - [2251] train: 1.62530 0.78990 0.50503 0.33037 | val: 0.789461 |  0
+2026-04-20 23:23:49.454 | INFO     | experimental_utils:run_unicsl:534 - [2301] train: 1.58948 0.77521 0.48426 0.33001 | val: 0.774729 |  0
+2026-04-20 23:23:52.183 | INFO     | experimental_utils:run_unicsl:534 - [2351] train: 1.56390 0.76247 0.47179 0.32964 | val: 0.759820 |  0
+2026-04-20 23:23:54.914 | INFO     | experimental_utils:run_unicsl:534 - [2401] train: 1.54214 0.74761 0.46527 0.32927 | val: 0.745443 |  0
+2026-04-20 23:23:57.641 | INFO     | experimental_utils:run_unicsl:534 - [2451] train: 1.50562 0.73122 0.44552 0.32888 | val: 0.730939 |  0
+2026-04-20 23:24:00.370 | INFO     | experimental_utils:run_unicsl:534 - [2501] train: 1.48007 0.71993 0.43167 0.32848 | val: 0.716897 |  0
+2026-04-20 23:24:03.091 | INFO     | experimental_utils:run_unicsl:534 - [2551] train: 1.45968 0.70505 0.42655 0.32808 | val: 0.703249 |  0
+2026-04-20 23:24:05.825 | INFO     | experimental_utils:run_unicsl:534 - [2601] train: 1.43670 0.69694 0.41208 0.32767 | val: 0.689869 |  0
+2026-04-20 23:24:08.555 | INFO     | experimental_utils:run_unicsl:534 - [2651] train: 1.41048 0.68149 0.40174 0.32725 | val: 0.677167 |  0
+2026-04-20 23:24:11.280 | INFO     | experimental_utils:run_unicsl:534 - [2701] train: 1.38930 0.67062 0.39186 0.32683 | val: 0.664618 |  0
+2026-04-20 23:24:14.004 | INFO     | experimental_utils:run_unicsl:534 - [2751] train: 1.36717 0.65766 0.38311 0.32639 | val: 0.652308 |  0
+2026-04-20 23:24:16.728 | INFO     | experimental_utils:run_unicsl:534 - [2801] train: 1.34807 0.64987 0.37225 0.32595 | val: 0.640556 |  0
+2026-04-20 23:24:19.460 | INFO     | experimental_utils:run_unicsl:534 - [2851] train: 1.32940 0.64202 0.36188 0.32550 | val: 0.628946 |  0
+2026-04-20 23:24:22.184 | INFO     | experimental_utils:run_unicsl:534 - [2901] train: 1.31533 0.62930 0.36098 0.32504 | val: 0.617570 |  0
+2026-04-20 23:24:24.918 | INFO     | experimental_utils:run_unicsl:534 - [2951] train: 1.28129 0.61030 0.34641 0.32458 | val: 0.606678 |  0
+2026-04-20 23:24:27.599 | INFO     | experimental_utils:run_unicsl:534 - [3000] train: 1.26429 0.60093 0.33925 0.32412 | val: 0.596142 |  0
+2026-04-20 23:24:27.723 | INFO     | experimental_utils:run_unicsl:338 - ===== LOGGER =====
+2026-04-20 23:24:27.723 | INFO     | experimental_utils:run_unicsl:339 - logger path: unicsl_logs/unicsl_fmri_68full_4latent/unicsl_fmri_68full_4latent.log
+2026-04-20 23:24:27.723 | INFO     | experimental_utils:run_unicsl:357 - {'learning_rate': 1e-05, 'pred_len': 1, 'lag': 1, 'eval_var_batch_size': 8, 'reconstruction_epochs': 1000, 'joint_epochs': 2000, 'stop_epoch': 3000, 'cuda_device': 'cuda:0', 'print_freq': 50, 'n_encoder_layers': 8, 'n_encoder_channels': 12, 'n_kernel_size': 6}
+2026-04-20 23:24:27.723 | INFO     | experimental_utils:run_unicsl:366 - data length: 240
+2026-04-20 23:24:27.723 | INFO     | experimental_utils:run_unicsl:368 - ***** SEED 0 *****
+/storage/home/ydk297/miniconda3/envs/uncle_clean/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-04-20 23:24:27.739 | INFO     | experimental_utils:run_unicsl:375 - training model params
+2026-04-20 23:24:27.740 | INFO     | experimental_utils:run_unicsl:389 - RECONSTRUCTION STAGE
+2026-04-20 23:24:27.777 | INFO     | experimental_utils:run_unicsl:457 - [   1] train: 3.32684 0.00000 2.98532 0.34152 | val: 2.246661 |  0
+2026-04-20 23:24:29.446 | INFO     | experimental_utils:run_unicsl:457 - [  51] train: 2.72252 0.00000 2.38067 0.34184 | val: 1.832244 |  0
+2026-04-20 23:24:31.110 | INFO     | experimental_utils:run_unicsl:457 - [ 101] train: 2.33824 0.00000 1.99612 0.34212 | val: 1.570459 |  0
+2026-04-20 23:24:32.780 | INFO     | experimental_utils:run_unicsl:457 - [ 151] train: 2.08552 0.00000 1.74318 0.34234 | val: 1.391791 |  0
+2026-04-20 23:24:34.443 | INFO     | experimental_utils:run_unicsl:457 - [ 201] train: 1.89645 0.00000 1.55394 0.34250 | val: 1.260542 |  0
+2026-04-20 23:24:36.109 | INFO     | experimental_utils:run_unicsl:457 - [ 251] train: 1.75202 0.00000 1.40942 0.34260 | val: 1.161675 |  0
+2026-04-20 23:24:37.777 | INFO     | experimental_utils:run_unicsl:457 - [ 301] train: 1.63642 0.00000 1.29380 0.34261 | val: 1.087690 |  0
+2026-04-20 23:24:39.448 | INFO     | experimental_utils:run_unicsl:457 - [ 351] train: 1.55868 0.00000 1.21614 0.34254 | val: 1.033105 |  0
+2026-04-20 23:24:41.111 | INFO     | experimental_utils:run_unicsl:457 - [ 401] train: 1.48744 0.00000 1.14507 0.34237 | val: 0.993029 |  0
+2026-04-20 23:24:42.778 | INFO     | experimental_utils:run_unicsl:457 - [ 451] train: 1.43851 0.00000 1.09641 0.34210 | val: 0.965170 |  0
+2026-04-20 23:24:44.443 | INFO     | experimental_utils:run_unicsl:457 - [ 501] train: 1.39523 0.00000 1.05350 0.34173 | val: 0.946850 |  0
+2026-04-20 23:24:46.105 | INFO     | experimental_utils:run_unicsl:457 - [ 551] train: 1.36541 0.00000 1.02415 0.34127 | val: 0.935278 |  0
+2026-04-20 23:24:47.784 | INFO     | experimental_utils:run_unicsl:457 - [ 601] train: 1.34421 0.00000 1.00347 0.34073 | val: 0.927955 |  0
+2026-04-20 23:24:49.556 | INFO     | experimental_utils:run_unicsl:457 - [ 651] train: 1.32634 0.00000 0.98620 0.34015 | val: 0.922761 |  0
+2026-04-20 23:24:51.233 | INFO     | experimental_utils:run_unicsl:457 - [ 701] train: 1.30217 0.00000 0.96265 0.33952 | val: 0.918261 |  0
+2026-04-20 23:24:52.901 | INFO     | experimental_utils:run_unicsl:457 - [ 751] train: 1.29330 0.00000 0.95443 0.33887 | val: 0.913543 |  0
+2026-04-20 23:24:54.580 | INFO     | experimental_utils:run_unicsl:457 - [ 801] train: 1.28377 0.00000 0.94556 0.33822 | val: 0.908012 |  0
+2026-04-20 23:24:56.252 | INFO     | experimental_utils:run_unicsl:457 - [ 851] train: 1.26776 0.00000 0.93020 0.33756 | val: 0.901453 |  0
+2026-04-20 23:24:57.930 | INFO     | experimental_utils:run_unicsl:457 - [ 901] train: 1.25539 0.00000 0.91849 0.33690 | val: 0.893842 |  0
+2026-04-20 23:24:59.603 | INFO     | experimental_utils:run_unicsl:457 - [ 951] train: 1.24072 0.00000 0.90447 0.33625 | val: 0.885430 |  0
+2026-04-20 23:25:01.240 | INFO     | experimental_utils:run_unicsl:457 - [1000] train: 1.22860 0.00000 0.89297 0.33563 | val: 0.876416 |  0
+2026-04-20 23:25:01.240 | INFO     | experimental_utils:run_unicsl:461 - JOINT STAGE
+2026-04-20 23:25:01.294 | INFO     | experimental_utils:run_unicsl:534 - [1001] train: 2.24065 1.00183 0.89520 0.34361 | val: 1.001091 |  0
+2026-04-20 23:25:04.030 | INFO     | experimental_utils:run_unicsl:534 - [1051] train: 2.22586 0.99792 0.88521 0.34273 | val: 0.998297 |  0
+2026-04-20 23:25:06.767 | INFO     | experimental_utils:run_unicsl:534 - [1101] train: 2.20308 0.99569 0.86549 0.34189 | val: 0.995559 |  0
+2026-04-20 23:25:09.508 | INFO     | experimental_utils:run_unicsl:534 - [1151] train: 2.18338 0.99304 0.84924 0.34109 | val: 0.992709 |  0
+2026-04-20 23:25:12.252 | INFO     | experimental_utils:run_unicsl:534 - [1201] train: 2.16708 0.98964 0.83711 0.34033 | val: 0.989404 |  0
+2026-04-20 23:25:14.990 | INFO     | experimental_utils:run_unicsl:534 - [1251] train: 2.14912 0.98646 0.82304 0.33962 | val: 0.985615 |  0
+2026-04-20 23:25:17.723 | INFO     | experimental_utils:run_unicsl:534 - [1301] train: 2.12562 0.98133 0.80535 0.33894 | val: 0.981558 |  0
+2026-04-20 23:25:20.472 | INFO     | experimental_utils:run_unicsl:534 - [1351] train: 2.10264 0.97979 0.78456 0.33829 | val: 0.977217 |  0
+2026-04-20 23:25:23.213 | INFO     | experimental_utils:run_unicsl:534 - [1401] train: 2.08573 0.97393 0.77413 0.33767 | val: 0.972308 |  0
+2026-04-20 23:25:25.954 | INFO     | experimental_utils:run_unicsl:534 - [1451] train: 2.06145 0.96707 0.75730 0.33708 | val: 0.966746 |  0
+2026-04-20 23:25:28.691 | INFO     | experimental_utils:run_unicsl:534 - [1501] train: 2.03398 0.95930 0.73816 0.33652 | val: 0.960713 |  0
+2026-04-20 23:25:31.430 | INFO     | experimental_utils:run_unicsl:534 - [1551] train: 2.00806 0.95659 0.71550 0.33598 | val: 0.954320 |  0
+2026-04-20 23:25:34.162 | INFO     | experimental_utils:run_unicsl:534 - [1601] train: 1.98553 0.94704 0.70303 0.33546 | val: 0.947379 |  0
+2026-04-20 23:25:36.898 | INFO     | experimental_utils:run_unicsl:534 - [1651] train: 1.95681 0.94070 0.68113 0.33497 | val: 0.939534 |  0
+2026-04-20 23:25:39.634 | INFO     | experimental_utils:run_unicsl:534 - [1701] train: 1.94481 0.93370 0.67661 0.33451 | val: 0.930791 |  0
+2026-04-20 23:25:42.371 | INFO     | experimental_utils:run_unicsl:534 - [1751] train: 1.90545 0.92510 0.64629 0.33406 | val: 0.921489 |  0
+2026-04-20 23:25:45.111 | INFO     | experimental_utils:run_unicsl:534 - [1801] train: 1.88351 0.91140 0.63849 0.33363 | val: 0.911509 |  0
+2026-04-20 23:25:47.847 | INFO     | experimental_utils:run_unicsl:534 - [1851] train: 1.86029 0.90223 0.62485 0.33321 | val: 0.901103 |  0
+2026-04-20 23:25:50.585 | INFO     | experimental_utils:run_unicsl:534 - [1901] train: 1.83357 0.89271 0.60805 0.33281 | val: 0.890266 |  0
+2026-04-20 23:25:53.323 | INFO     | experimental_utils:run_unicsl:534 - [1951] train: 1.81127 0.88206 0.59679 0.33242 | val: 0.878717 |  0
+2026-04-20 23:25:56.054 | INFO     | experimental_utils:run_unicsl:534 - [2001] train: 1.77565 0.86634 0.57727 0.33204 | val: 0.866888 |  0
+2026-04-20 23:25:58.778 | INFO     | experimental_utils:run_unicsl:534 - [2051] train: 1.74613 0.85896 0.55552 0.33166 | val: 0.854722 |  0
+2026-04-20 23:26:01.500 | INFO     | experimental_utils:run_unicsl:534 - [2101] train: 1.72242 0.84603 0.54510 0.33130 | val: 0.842382 |  0
+2026-04-20 23:26:04.217 | INFO     | experimental_utils:run_unicsl:534 - [2151] train: 1.69664 0.83028 0.53543 0.33093 | val: 0.829518 |  0
+2026-04-20 23:26:06.940 | INFO     | experimental_utils:run_unicsl:534 - [2201] train: 1.66842 0.81736 0.52047 0.33058 | val: 0.816476 |  0
+2026-04-20 23:26:09.664 | INFO     | experimental_utils:run_unicsl:534 - [2251] train: 1.64662 0.80656 0.50984 0.33022 | val: 0.803233 |  0
+2026-04-20 23:26:12.385 | INFO     | experimental_utils:run_unicsl:534 - [2301] train: 1.62456 0.79229 0.50240 0.32987 | val: 0.790008 |  0
+2026-04-20 23:26:15.106 | INFO     | experimental_utils:run_unicsl:534 - [2351] train: 1.58942 0.77817 0.48173 0.32952 | val: 0.776322 |  0
+2026-04-20 23:26:17.833 | INFO     | experimental_utils:run_unicsl:534 - [2401] train: 1.56236 0.76199 0.47121 0.32916 | val: 0.762624 |  0
+2026-04-20 23:26:20.559 | INFO     | experimental_utils:run_unicsl:534 - [2451] train: 1.54546 0.75128 0.46538 0.32881 | val: 0.748841 |  0
+2026-04-20 23:26:23.286 | INFO     | experimental_utils:run_unicsl:534 - [2501] train: 1.52131 0.73871 0.45415 0.32844 | val: 0.734676 |  0
+2026-04-20 23:26:26.023 | INFO     | experimental_utils:run_unicsl:534 - [2551] train: 1.49345 0.72595 0.43942 0.32808 | val: 0.721302 |  0
+2026-04-20 23:26:28.746 | INFO     | experimental_utils:run_unicsl:534 - [2601] train: 1.47291 0.71411 0.43110 0.32770 | val: 0.707646 |  0
+2026-04-20 23:26:31.473 | INFO     | experimental_utils:run_unicsl:534 - [2651] train: 1.44532 0.69848 0.41952 0.32732 | val: 0.694385 |  0
+2026-04-20 23:26:34.203 | INFO     | experimental_utils:run_unicsl:534 - [2701] train: 1.41685 0.68318 0.40674 0.32694 | val: 0.680900 |  0
+2026-04-20 23:26:36.928 | INFO     | experimental_utils:run_unicsl:534 - [2751] train: 1.40236 0.67198 0.40384 0.32654 | val: 0.667696 |  0
+2026-04-20 23:26:39.659 | INFO     | experimental_utils:run_unicsl:534 - [2801] train: 1.38626 0.65877 0.40136 0.32614 | val: 0.654243 |  0
+2026-04-20 23:26:42.382 | INFO     | experimental_utils:run_unicsl:534 - [2851] train: 1.35503 0.64616 0.38314 0.32573 | val: 0.640923 |  0
+2026-04-20 23:26:45.114 | INFO     | experimental_utils:run_unicsl:534 - [2901] train: 1.34097 0.63246 0.38319 0.32531 | val: 0.628129 |  0
+2026-04-20 23:26:47.843 | INFO     | experimental_utils:run_unicsl:534 - [2951] train: 1.32007 0.62401 0.37118 0.32488 | val: 0.615335 |  0
+2026-04-20 23:26:50.522 | INFO     | experimental_utils:run_unicsl:534 - [3000] train: 1.30269 0.61277 0.36547 0.32445 | val: 0.603237 |  0
+2026-04-20 23:26:50.646 | INFO     | experimental_utils:run_unicsl:338 - ===== LOGGER =====
+2026-04-20 23:26:50.647 | INFO     | experimental_utils:run_unicsl:339 - logger path: unicsl_logs/unicsl_fmri_68full_4latent/unicsl_fmri_68full_4latent.log
+2026-04-20 23:26:50.647 | INFO     | experimental_utils:run_unicsl:357 - {'learning_rate': 1e-05, 'pred_len': 1, 'lag': 1, 'eval_var_batch_size': 8, 'reconstruction_epochs': 1000, 'joint_epochs': 2000, 'stop_epoch': 3000, 'cuda_device': 'cuda:0', 'print_freq': 50, 'n_encoder_layers': 8, 'n_encoder_channels': 12, 'n_kernel_size': 6}
+2026-04-20 23:26:50.647 | INFO     | experimental_utils:run_unicsl:366 - data length: 240
+2026-04-20 23:26:50.647 | INFO     | experimental_utils:run_unicsl:368 - ***** SEED 0 *****
+/storage/home/ydk297/miniconda3/envs/uncle_clean/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-04-20 23:26:50.663 | INFO     | experimental_utils:run_unicsl:375 - training model params
+2026-04-20 23:26:50.664 | INFO     | experimental_utils:run_unicsl:389 - RECONSTRUCTION STAGE
+2026-04-20 23:26:50.702 | INFO     | experimental_utils:run_unicsl:457 - [   1] train: 3.33782 0.00000 2.99630 0.34152 | val: 2.259923 |  0
+2026-04-20 23:26:52.365 | INFO     | experimental_utils:run_unicsl:457 - [  51] train: 2.73644 0.00000 2.39459 0.34184 | val: 1.839800 |  0
+2026-04-20 23:26:54.030 | INFO     | experimental_utils:run_unicsl:457 - [ 101] train: 2.34755 0.00000 2.00543 0.34212 | val: 1.573610 |  0
+2026-04-20 23:26:55.697 | INFO     | experimental_utils:run_unicsl:457 - [ 151] train: 2.08491 0.00000 1.74257 0.34234 | val: 1.392158 |  0
+2026-04-20 23:26:57.360 | INFO     | experimental_utils:run_unicsl:457 - [ 201] train: 1.89755 0.00000 1.55505 0.34251 | val: 1.259138 |  0
+2026-04-20 23:26:59.027 | INFO     | experimental_utils:run_unicsl:457 - [ 251] train: 1.74621 0.00000 1.40361 0.34260 | val: 1.158642 |  0
+2026-04-20 23:27:00.688 | INFO     | experimental_utils:run_unicsl:457 - [ 301] train: 1.63334 0.00000 1.29073 0.34262 | val: 1.083111 |  0
+2026-04-20 23:27:02.349 | INFO     | experimental_utils:run_unicsl:457 - [ 351] train: 1.54681 0.00000 1.20427 0.34255 | val: 1.027649 |  0
+2026-04-20 23:27:04.013 | INFO     | experimental_utils:run_unicsl:457 - [ 401] train: 1.49258 0.00000 1.15020 0.34238 | val: 0.987193 |  0
+2026-04-20 23:27:05.672 | INFO     | experimental_utils:run_unicsl:457 - [ 451] train: 1.43065 0.00000 1.08854 0.34211 | val: 0.959100 |  0
+2026-04-20 23:27:07.331 | INFO     | experimental_utils:run_unicsl:457 - [ 501] train: 1.38705 0.00000 1.04531 0.34174 | val: 0.940867 |  0
+2026-04-20 23:27:08.996 | INFO     | experimental_utils:run_unicsl:457 - [ 551] train: 1.36205 0.00000 1.02077 0.34128 | val: 0.929226 |  0
+2026-04-20 23:27:10.661 | INFO     | experimental_utils:run_unicsl:457 - [ 601] train: 1.33388 0.00000 0.99313 0.34075 | val: 0.921674 |  0
+2026-04-20 23:27:12.326 | INFO     | experimental_utils:run_unicsl:457 - [ 651] train: 1.31312 0.00000 0.97295 0.34017 | val: 0.916371 |  0
+2026-04-20 23:27:13.992 | INFO     | experimental_utils:run_unicsl:457 - [ 701] train: 1.29905 0.00000 0.95950 0.33954 | val: 0.911857 |  0
+2026-04-20 23:27:15.652 | INFO     | experimental_utils:run_unicsl:457 - [ 751] train: 1.28202 0.00000 0.94312 0.33890 | val: 0.907131 |  0
+2026-04-20 23:27:17.318 | INFO     | experimental_utils:run_unicsl:457 - [ 801] train: 1.27405 0.00000 0.93581 0.33824 | val: 0.901645 |  0
+2026-04-20 23:27:18.985 | INFO     | experimental_utils:run_unicsl:457 - [ 851] train: 1.26359 0.00000 0.92601 0.33758 | val: 0.895234 |  0
+2026-04-20 23:27:20.649 | INFO     | experimental_utils:run_unicsl:457 - [ 901] train: 1.24730 0.00000 0.91037 0.33693 | val: 0.887805 |  0
+2026-04-20 23:27:22.312 | INFO     | experimental_utils:run_unicsl:457 - [ 951] train: 1.23321 0.00000 0.89693 0.33628 | val: 0.879332 |  0
+2026-04-20 23:27:23.941 | INFO     | experimental_utils:run_unicsl:457 - [1000] train: 1.22568 0.00000 0.89003 0.33566 | val: 0.870152 |  0
+2026-04-20 23:27:23.941 | INFO     | experimental_utils:run_unicsl:461 - JOINT STAGE
+2026-04-20 23:27:23.997 | INFO     | experimental_utils:run_unicsl:534 - [1001] train: 2.22921 0.99777 0.88780 0.34364 | val: 0.997551 |  0
+2026-04-20 23:27:26.741 | INFO     | experimental_utils:run_unicsl:534 - [1051] train: 2.22205 0.99748 0.88181 0.34277 | val: 0.994952 |  0
+2026-04-20 23:27:29.474 | INFO     | experimental_utils:run_unicsl:534 - [1101] train: 2.20649 0.99294 0.87162 0.34193 | val: 0.992547 |  0
+2026-04-20 23:27:32.214 | INFO     | experimental_utils:run_unicsl:534 - [1151] train: 2.19036 0.99218 0.85706 0.34112 | val: 0.990155 |  0
+2026-04-20 23:27:34.949 | INFO     | experimental_utils:run_unicsl:534 - [1201] train: 2.17382 0.98908 0.84439 0.34035 | val: 0.987679 |  0
+2026-04-20 23:27:37.680 | INFO     | experimental_utils:run_unicsl:534 - [1251] train: 2.15006 0.98513 0.82533 0.33960 | val: 0.985064 |  0
+2026-04-20 23:27:40.422 | INFO     | experimental_utils:run_unicsl:534 - [1301] train: 2.13564 0.98218 0.81456 0.33890 | val: 0.982205 |  0
+2026-04-20 23:27:43.159 | INFO     | experimental_utils:run_unicsl:534 - [1351] train: 2.11928 0.98086 0.80021 0.33822 | val: 0.978985 |  0
+2026-04-20 23:27:45.893 | INFO     | experimental_utils:run_unicsl:534 - [1401] train: 2.09900 0.97546 0.78596 0.33757 | val: 0.974805 |  0
+2026-04-20 23:27:48.619 | INFO     | experimental_utils:run_unicsl:534 - [1451] train: 2.08055 0.97130 0.77230 0.33695 | val: 0.970290 |  0
+2026-04-20 23:27:51.357 | INFO     | experimental_utils:run_unicsl:534 - [1501] train: 2.06001 0.96843 0.75523 0.33635 | val: 0.965581 |  0
+2026-04-20 23:27:54.101 | INFO     | experimental_utils:run_unicsl:534 - [1551] train: 2.04177 0.96119 0.74480 0.33577 | val: 0.960368 |  0
+2026-04-20 23:27:56.838 | INFO     | experimental_utils:run_unicsl:534 - [1601] train: 2.02171 0.95528 0.73121 0.33522 | val: 0.954657 |  0
+2026-04-20 23:27:59.572 | INFO     | experimental_utils:run_unicsl:534 - [1651] train: 1.99436 0.94755 0.71212 0.33468 | val: 0.948255 |  0
+2026-04-20 23:28:02.292 | INFO     | experimental_utils:run_unicsl:534 - [1701] train: 1.97858 0.94379 0.70062 0.33417 | val: 0.941056 |  0
+2026-04-20 23:28:05.019 | INFO     | experimental_utils:run_unicsl:534 - [1751] train: 1.94821 0.93531 0.67921 0.33368 | val: 0.933089 |  0
+2026-04-20 23:28:07.748 | INFO     | experimental_utils:run_unicsl:534 - [1801] train: 1.92398 0.92490 0.66586 0.33321 | val: 0.924407 |  0
+2026-04-20 23:28:10.469 | INFO     | experimental_utils:run_unicsl:534 - [1851] train: 1.90716 0.91853 0.65587 0.33276 | val: 0.915115 |  0
+2026-04-20 23:28:13.197 | INFO     | experimental_utils:run_unicsl:534 - [1901] train: 1.88897 0.90933 0.64732 0.33232 | val: 0.905254 |  0
+2026-04-20 23:28:15.924 | INFO     | experimental_utils:run_unicsl:534 - [1951] train: 1.85351 0.90001 0.62161 0.33189 | val: 0.894913 |  0
+2026-04-20 23:28:18.654 | INFO     | experimental_utils:run_unicsl:534 - [2001] train: 1.82601 0.88753 0.60701 0.33147 | val: 0.883773 |  0
+2026-04-20 23:28:21.379 | INFO     | experimental_utils:run_unicsl:534 - [2051] train: 1.80456 0.87866 0.59484 0.33105 | val: 0.872389 |  0
+2026-04-20 23:28:24.112 | INFO     | experimental_utils:run_unicsl:534 - [2101] train: 1.77533 0.86961 0.57507 0.33065 | val: 0.860526 |  0
+2026-04-20 23:28:26.835 | INFO     | experimental_utils:run_unicsl:534 - [2151] train: 1.75116 0.85473 0.56618 0.33025 | val: 0.848467 |  0
+2026-04-20 23:28:29.565 | INFO     | experimental_utils:run_unicsl:534 - [2201] train: 1.72687 0.84069 0.55632 0.32986 | val: 0.836218 |  0
+2026-04-20 23:28:32.290 | INFO     | experimental_utils:run_unicsl:534 - [2251] train: 1.70818 0.83019 0.54852 0.32947 | val: 0.823883 |  0
+2026-04-20 23:28:35.013 | INFO     | experimental_utils:run_unicsl:534 - [2301] train: 1.68031 0.81881 0.53242 0.32909 | val: 0.811692 |  0
+2026-04-20 23:28:37.739 | INFO     | experimental_utils:run_unicsl:534 - [2351] train: 1.65605 0.80942 0.51793 0.32870 | val: 0.799050 |  0
+2026-04-20 23:28:40.460 | INFO     | experimental_utils:run_unicsl:534 - [2401] train: 1.63276 0.79421 0.51023 0.32832 | val: 0.787044 |  0
+2026-04-20 23:28:43.186 | INFO     | experimental_utils:run_unicsl:534 - [2451] train: 1.61040 0.78305 0.49942 0.32793 | val: 0.774660 |  0
+2026-04-20 23:28:45.905 | INFO     | experimental_utils:run_unicsl:534 - [2501] train: 1.58123 0.77192 0.48176 0.32755 | val: 0.762259 |  0
+2026-04-20 23:28:48.634 | INFO     | experimental_utils:run_unicsl:534 - [2551] train: 1.57217 0.75782 0.48718 0.32716 | val: 0.750340 |  0
+2026-04-20 23:28:51.357 | INFO     | experimental_utils:run_unicsl:534 - [2601] train: 1.54714 0.74981 0.47055 0.32678 | val: 0.738151 |  0
+2026-04-20 23:28:54.077 | INFO     | experimental_utils:run_unicsl:534 - [2651] train: 1.52602 0.73691 0.46271 0.32640 | val: 0.726124 |  0
+2026-04-20 23:28:56.806 | INFO     | experimental_utils:run_unicsl:534 - [2701] train: 1.49917 0.72543 0.44772 0.32602 | val: 0.713927 |  0
+2026-04-20 23:28:59.533 | INFO     | experimental_utils:run_unicsl:534 - [2751] train: 1.48547 0.71900 0.44083 0.32563 | val: 0.701719 |  0
+2026-04-20 23:29:02.263 | INFO     | experimental_utils:run_unicsl:534 - [2801] train: 1.45392 0.70217 0.42650 0.32525 | val: 0.689420 |  0
+2026-04-20 23:29:04.985 | INFO     | experimental_utils:run_unicsl:534 - [2851] train: 1.44463 0.69136 0.42841 0.32486 | val: 0.677285 |  0
+2026-04-20 23:29:07.708 | INFO     | experimental_utils:run_unicsl:534 - [2901] train: 1.41675 0.67777 0.41452 0.32447 | val: 0.665005 |  0
+2026-04-20 23:29:10.434 | INFO     | experimental_utils:run_unicsl:534 - [2951] train: 1.39338 0.66641 0.40290 0.32407 | val: 0.652950 |  0
+2026-04-20 23:29:13.105 | INFO     | experimental_utils:run_unicsl:534 - [3000] train: 1.37935 0.65890 0.39677 0.32368 | val: 0.640971 |  0
+2026-04-20 23:29:13.228 | INFO     | experimental_utils:run_unicsl:338 - ===== LOGGER =====
+2026-04-20 23:29:13.228 | INFO     | experimental_utils:run_unicsl:339 - logger path: unicsl_logs/unicsl_fmri_68full_4latent/unicsl_fmri_68full_4latent.log
+2026-04-20 23:29:13.228 | INFO     | experimental_utils:run_unicsl:357 - {'learning_rate': 1e-05, 'pred_len': 1, 'lag': 1, 'eval_var_batch_size': 8, 'reconstruction_epochs': 1000, 'joint_epochs': 2000, 'stop_epoch': 3000, 'cuda_device': 'cuda:0', 'print_freq': 50, 'n_encoder_layers': 8, 'n_encoder_channels': 12, 'n_kernel_size': 6}
+2026-04-20 23:29:13.228 | INFO     | experimental_utils:run_unicsl:366 - data length: 240
+2026-04-20 23:29:13.228 | INFO     | experimental_utils:run_unicsl:368 - ***** SEED 0 *****
+/storage/home/ydk297/miniconda3/envs/uncle_clean/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-04-20 23:29:13.244 | INFO     | experimental_utils:run_unicsl:375 - training model params
+2026-04-20 23:29:13.244 | INFO     | experimental_utils:run_unicsl:389 - RECONSTRUCTION STAGE
+2026-04-20 23:29:13.281 | INFO     | experimental_utils:run_unicsl:457 - [   1] train: 3.29936 0.00000 2.95784 0.34152 | val: 2.217100 |  0
+2026-04-20 23:29:14.947 | INFO     | experimental_utils:run_unicsl:457 - [  51] train: 2.68587 0.00000 2.34402 0.34184 | val: 1.799034 |  0
+2026-04-20 23:29:16.610 | INFO     | experimental_utils:run_unicsl:457 - [ 101] train: 2.31417 0.00000 1.97205 0.34212 | val: 1.535667 |  0
+2026-04-20 23:29:18.272 | INFO     | experimental_utils:run_unicsl:457 - [ 151] train: 2.05581 0.00000 1.71347 0.34234 | val: 1.358337 |  0
+2026-04-20 23:29:19.929 | INFO     | experimental_utils:run_unicsl:457 - [ 201] train: 1.86876 0.00000 1.52625 0.34251 | val: 1.229333 |  0
+2026-04-20 23:29:21.590 | INFO     | experimental_utils:run_unicsl:457 - [ 251] train: 1.72116 0.00000 1.37856 0.34260 | val: 1.132627 |  0
+2026-04-20 23:29:23.247 | INFO     | experimental_utils:run_unicsl:457 - [ 301] train: 1.61422 0.00000 1.27161 0.34262 | val: 1.060189 |  0
+2026-04-20 23:29:24.910 | INFO     | experimental_utils:run_unicsl:457 - [ 351] train: 1.53330 0.00000 1.19076 0.34254 | val: 1.006704 |  0
+2026-04-20 23:29:26.574 | INFO     | experimental_utils:run_unicsl:457 - [ 401] train: 1.46655 0.00000 1.12418 0.34237 | val: 0.968642 |  0
+2026-04-20 23:29:28.244 | INFO     | experimental_utils:run_unicsl:457 - [ 451] train: 1.41501 0.00000 1.07292 0.34209 | val: 0.943059 |  0
+2026-04-20 23:29:29.904 | INFO     | experimental_utils:run_unicsl:457 - [ 501] train: 1.37514 0.00000 1.03343 0.34172 | val: 0.926880 |  0
+2026-04-20 23:29:31.569 | INFO     | experimental_utils:run_unicsl:457 - [ 551] train: 1.34822 0.00000 1.00696 0.34125 | val: 0.917516 |  0
+2026-04-20 23:29:33.231 | INFO     | experimental_utils:run_unicsl:457 - [ 601] train: 1.32223 0.00000 0.98151 0.34072 | val: 0.912405 |  0
+2026-04-20 23:29:34.914 | INFO     | experimental_utils:run_unicsl:457 - [ 651] train: 1.30812 0.00000 0.96800 0.34012 | val: 0.909291 |  0
+2026-04-20 23:29:36.920 | INFO     | experimental_utils:run_unicsl:457 - [ 701] train: 1.29704 0.00000 0.95755 0.33950 | val: 0.906779 |  0
+2026-04-20 23:29:38.965 | INFO     | experimental_utils:run_unicsl:457 - [ 751] train: 1.28857 0.00000 0.94972 0.33885 | val: 0.903902 |  0
+2026-04-20 23:29:40.913 | INFO     | experimental_utils:run_unicsl:457 - [ 801] train: 1.27561 0.00000 0.93743 0.33819 | val: 0.900207 |  0
+2026-04-20 23:29:43.327 | INFO     | experimental_utils:run_unicsl:457 - [ 851] train: 1.26577 0.00000 0.92825 0.33753 | val: 0.895455 |  0
+2026-04-20 23:29:45.289 | INFO     | experimental_utils:run_unicsl:457 - [ 901] train: 1.25615 0.00000 0.91928 0.33687 | val: 0.889675 |  0
+2026-04-20 23:29:47.810 | INFO     | experimental_utils:run_unicsl:457 - [ 951] train: 1.24846 0.00000 0.91225 0.33622 | val: 0.883004 |  0
+2026-04-20 23:29:49.771 | INFO     | experimental_utils:run_unicsl:457 - [1000] train: 1.23591 0.00000 0.90033 0.33558 | val: 0.875658 |  0
+2026-04-20 23:29:49.772 | INFO     | experimental_utils:run_unicsl:461 - JOINT STAGE
+2026-04-20 23:29:49.827 | INFO     | experimental_utils:run_unicsl:534 - [1001] train: 2.24442 1.00066 0.90019 0.34357 | val: 0.999164 |  0
+2026-04-20 23:29:52.558 | INFO     | experimental_utils:run_unicsl:534 - [1051] train: 2.23442 0.99782 0.89392 0.34267 | val: 0.996840 |  0
+2026-04-20 23:29:55.330 | INFO     | experimental_utils:run_unicsl:534 - [1101] train: 2.22005 0.99714 0.88111 0.34180 | val: 0.994716 |  0
+2026-04-20 23:29:58.110 | INFO     | experimental_utils:run_unicsl:534 - [1151] train: 2.20923 0.99596 0.87231 0.34096 | val: 0.992720 |  0
+2026-04-20 23:30:00.845 | INFO     | experimental_utils:run_unicsl:534 - [1201] train: 2.19738 0.99200 0.86523 0.34015 | val: 0.990692 |  0
+2026-04-20 23:30:03.580 | INFO     | experimental_utils:run_unicsl:534 - [1251] train: 2.18924 0.99284 0.85704 0.33937 | val: 0.988602 |  0
+2026-04-20 23:30:06.317 | INFO     | experimental_utils:run_unicsl:534 - [1301] train: 2.16545 0.98757 0.83927 0.33861 | val: 0.986441 |  0
+2026-04-20 23:30:09.055 | INFO     | experimental_utils:run_unicsl:534 - [1351] train: 2.15426 0.98431 0.83207 0.33788 | val: 0.984075 |  0
+2026-04-20 23:30:11.793 | INFO     | experimental_utils:run_unicsl:534 - [1401] train: 2.14374 0.98274 0.82383 0.33717 | val: 0.981520 |  0
+2026-04-20 23:30:14.534 | INFO     | experimental_utils:run_unicsl:534 - [1451] train: 2.12966 0.98141 0.81175 0.33649 | val: 0.978769 |  0
+2026-04-20 23:30:17.268 | INFO     | experimental_utils:run_unicsl:534 - [1501] train: 2.11114 0.97658 0.79871 0.33584 | val: 0.975787 |  0
+2026-04-20 23:30:20.004 | INFO     | experimental_utils:run_unicsl:534 - [1551] train: 2.09700 0.97558 0.78621 0.33521 | val: 0.972462 |  0
+2026-04-20 23:30:22.744 | INFO     | experimental_utils:run_unicsl:534 - [1601] train: 2.08454 0.97143 0.77850 0.33461 | val: 0.968826 |  0
+2026-04-20 23:30:25.497 | INFO     | experimental_utils:run_unicsl:534 - [1651] train: 2.05917 0.96503 0.76010 0.33403 | val: 0.964832 |  0
+2026-04-20 23:30:28.232 | INFO     | experimental_utils:run_unicsl:534 - [1701] train: 2.05084 0.96226 0.75509 0.33348 | val: 0.960391 |  0
+2026-04-20 23:30:30.967 | INFO     | experimental_utils:run_unicsl:534 - [1751] train: 2.01973 0.95723 0.72955 0.33295 | val: 0.955474 |  0
+2026-04-20 23:30:33.705 | INFO     | experimental_utils:run_unicsl:534 - [1801] train: 1.99887 0.94914 0.71729 0.33244 | val: 0.949957 |  0
+2026-04-20 23:30:36.437 | INFO     | experimental_utils:run_unicsl:534 - [1851] train: 1.98220 0.94549 0.70476 0.33196 | val: 0.943954 |  0
+2026-04-20 23:30:39.174 | INFO     | experimental_utils:run_unicsl:534 - [1901] train: 1.95878 0.93903 0.68826 0.33150 | val: 0.937412 |  0
+2026-04-20 23:30:41.919 | INFO     | experimental_utils:run_unicsl:534 - [1951] train: 1.93326 0.92788 0.67433 0.33106 | val: 0.930121 |  0
+2026-04-20 23:30:44.654 | INFO     | experimental_utils:run_unicsl:534 - [2001] train: 1.90636 0.92392 0.65180 0.33064 | val: 0.922029 |  0
+2026-04-20 23:30:47.392 | INFO     | experimental_utils:run_unicsl:534 - [2051] train: 1.88554 0.91471 0.64058 0.33024 | val: 0.913141 |  0
+2026-04-20 23:30:50.142 | INFO     | experimental_utils:run_unicsl:534 - [2101] train: 1.85504 0.90439 0.62080 0.32986 | val: 0.903335 |  0
+2026-04-20 23:30:52.881 | INFO     | experimental_utils:run_unicsl:534 - [2151] train: 1.82929 0.89627 0.60353 0.32949 | val: 0.892545 |  0
+2026-04-20 23:30:55.625 | INFO     | experimental_utils:run_unicsl:534 - [2201] train: 1.78978 0.88482 0.57582 0.32914 | val: 0.880825 |  0
+2026-04-20 23:30:58.362 | INFO     | experimental_utils:run_unicsl:534 - [2251] train: 1.75864 0.87169 0.55814 0.32881 | val: 0.868382 |  0
+2026-04-20 23:31:01.140 | INFO     | experimental_utils:run_unicsl:534 - [2301] train: 1.73497 0.85673 0.54975 0.32848 | val: 0.855270 |  0
+2026-04-20 23:31:03.877 | INFO     | experimental_utils:run_unicsl:534 - [2351] train: 1.70725 0.84775 0.53133 0.32817 | val: 0.841503 |  0
+2026-04-20 23:31:06.615 | INFO     | experimental_utils:run_unicsl:534 - [2401] train: 1.67506 0.83309 0.51411 0.32786 | val: 0.827477 |  0
+2026-04-20 23:31:09.352 | INFO     | experimental_utils:run_unicsl:534 - [2451] train: 1.65588 0.82215 0.50619 0.32755 | val: 0.813131 |  0
+2026-04-20 23:31:12.088 | INFO     | experimental_utils:run_unicsl:534 - [2501] train: 1.62191 0.80327 0.49140 0.32724 | val: 0.798564 |  0
+2026-04-20 23:31:14.829 | INFO     | experimental_utils:run_unicsl:534 - [2551] train: 1.59797 0.79468 0.47636 0.32693 | val: 0.783972 |  0
+2026-04-20 23:31:17.566 | INFO     | experimental_utils:run_unicsl:534 - [2601] train: 1.57378 0.78019 0.46697 0.32662 | val: 0.769335 |  0
+2026-04-20 23:31:20.297 | INFO     | experimental_utils:run_unicsl:534 - [2651] train: 1.54500 0.76172 0.45697 0.32631 | val: 0.755026 |  0
+2026-04-20 23:31:23.034 | INFO     | experimental_utils:run_unicsl:534 - [2701] train: 1.51884 0.74923 0.44361 0.32600 | val: 0.740632 |  0
+2026-04-20 23:31:25.772 | INFO     | experimental_utils:run_unicsl:534 - [2751] train: 1.48999 0.73592 0.42839 0.32568 | val: 0.726146 |  0
+2026-04-20 23:31:28.514 | INFO     | experimental_utils:run_unicsl:534 - [2801] train: 1.47318 0.72633 0.42151 0.32535 | val: 0.712239 |  0
+2026-04-20 23:31:31.253 | INFO     | experimental_utils:run_unicsl:534 - [2851] train: 1.44890 0.71199 0.41190 0.32501 | val: 0.698566 |  0
+2026-04-20 23:31:33.978 | INFO     | experimental_utils:run_unicsl:534 - [2901] train: 1.42776 0.69954 0.40356 0.32467 | val: 0.684944 |  0
+2026-04-20 23:31:36.706 | INFO     | experimental_utils:run_unicsl:534 - [2951] train: 1.40994 0.68460 0.40103 0.32432 | val: 0.671869 |  0
+2026-04-20 23:31:39.377 | INFO     | experimental_utils:run_unicsl:534 - [3000] train: 1.39281 0.67953 0.38931 0.32397 | val: 0.659264 |  0
+
+5 unicsl_fmri_68full_4latent datasets...
+Log directory: logs/_unicsl_fmri_68full_4latent2026-04-20_1776741581_gvar/
+evaling batch: 0
+Dataset #1;
+ [Permutation] Acc.: 0.9637; AUROC: 0.8139; AUPRC: 0.216
+[Parameter] Acc.: 0.9635; AUROC: 0.7821; AUPRC: 0.1144
+evaling batch: 0
+Dataset #2;
+ [Permutation] Acc.: 0.9635; AUROC: 0.7923; AUPRC: 0.1785
+[Parameter] Acc.: 0.9635; AUROC: 0.7643; AUPRC: 0.1018
+evaling batch: 0
+Dataset #3;
+ [Permutation] Acc.: 0.9635; AUROC: 0.8131; AUPRC: 0.1854
+[Parameter] Acc.: 0.9635; AUROC: 0.7857; AUPRC: 0.1122
+evaling batch: 0
+Dataset #4;
+ [Permutation] Acc.: 0.9635; AUROC: 0.8088; AUPRC: 0.1896
+[Parameter] Acc.: 0.9635; AUROC: 0.7775; AUPRC: 0.12
+evaling batch: 0
+Dataset #5;
+ [Permutation] Acc.: 0.9635; AUROC: 0.8069; AUPRC: 0.2003
+[Parameter] Acc.: 0.9635; AUROC: 0.7898; AUPRC: 0.1294
+Permutation
+Acc.         :0.9634948096885813
+AUROC        :0.8070250167686066
+AUPRC        :0.1939675636986375
+Parameter
+Acc.         :0.9634515570934254
+AUROC        :0.7798800629569861
+AUPRC        :0.11556667399198564
+

@@ -1,0 +1,9 @@
+# Vim swap files
+*.swp
+*.swo
+
+# Python byte code
+*.pyc
+
+# macOS Temp Files
+**/.DS_Store

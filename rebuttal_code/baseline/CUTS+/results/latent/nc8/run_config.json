@@ -1,0 +1,340 @@
+{
+  "baseline": "CUTS+",
+  "baseline_defaults": {
+    "batch_size": 128,
+    "config_source": "CUTS+/CUTS_Plus/opt/lorenz_example.yaml",
+    "data_dim": 1,
+    "data_pred": {
+      "concat_h": true,
+      "gru_layers": 1,
+      "lr_data_end": 0.001,
+      "lr_data_start": 0.01,
+      "mlp_hid": 32,
+      "model": "multi_lstm",
+      "pred_step": 1,
+      "prob": true,
+      "shared_weights_decoder": false,
+      "weight_decay": 0.0
+    },
+    "fill_policy": "rate_0.1_after_20",
+    "graph_discov": {
+      "dynamic_sampling_milestones": [
+        0
+      ],
+      "dynamic_sampling_periods": [
+        1
+      ],
+      "end_tau": 0.1,
+      "lambda_s_end": 0.01,
+      "lambda_s_start": 0.1,
+      "lr_graph_end": 0.0001,
+      "lr_graph_start": 0.001,
+      "start_tau": 1.0
+    },
+    "group_policy": "multiply_2_every_20",
+    "input_step": 16,
+    "n_groups": 32,
+    "show_graph_every": 16,
+    "supervision_policy": "masked_before_100",
+    "total_epoch": 64
+  },
+  "baseline_description": "CUTS+ through the vendored CUTS_Plus training path with input_step mapped to the benchmark temporal setting.",
+  "dataset": "nc8",
+  "dataset_bundle": {
+    "dataset_name": "nc8",
+    "latent_definition": {
+      "hidden_indices": [
+        0,
+        5
+      ],
+      "hidden_variable_names": [
+        "x",
+        "a"
+      ]
+    },
+    "metadata_files": {},
+    "mode": "latent",
+    "notes": [
+      "NC8 GT adjacency is evaluated in the CSV orientation already used by the existing NC8 baseline wrappers."
+    ],
+    "raw_root": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw",
+    "sample_count": 5,
+    "samples": [
+      {
+        "dataset_name": "nc8",
+        "graph_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_struct_0.csv",
+        "ground_truth_shape": [
+          6,
+          6
+        ],
+        "hidden_indices": [
+          0,
+          5
+        ],
+        "metadata": {
+          "num_variables": 6,
+          "replica_index": 0,
+          "sequence_length": 2000
+        },
+        "mode": "latent",
+        "notes": [
+          "NC8 latent mode masks variables at indices [0, 5]."
+        ],
+        "observed_indices": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "original_variable_names": [
+          "x",
+          "y",
+          "z",
+          "w",
+          "o",
+          "a",
+          "b",
+          "c"
+        ],
+        "sample_id": "replica_000",
+        "sequence_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_data_0.csv",
+        "sequence_shape": [
+          2000,
+          6
+        ],
+        "split": null,
+        "variable_names": [
+          "y",
+          "z",
+          "w",
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "dataset_name": "nc8",
+        "graph_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_struct_1.csv",
+        "ground_truth_shape": [
+          6,
+          6
+        ],
+        "hidden_indices": [
+          0,
+          5
+        ],
+        "metadata": {
+          "num_variables": 6,
+          "replica_index": 1,
+          "sequence_length": 2000
+        },
+        "mode": "latent",
+        "notes": [
+          "NC8 latent mode masks variables at indices [0, 5]."
+        ],
+        "observed_indices": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "original_variable_names": [
+          "x",
+          "y",
+          "z",
+          "w",
+          "o",
+          "a",
+          "b",
+          "c"
+        ],
+        "sample_id": "replica_001",
+        "sequence_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_data_1.csv",
+        "sequence_shape": [
+          2000,
+          6
+        ],
+        "split": null,
+        "variable_names": [
+          "y",
+          "z",
+          "w",
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "dataset_name": "nc8",
+        "graph_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_struct_2.csv",
+        "ground_truth_shape": [
+          6,
+          6
+        ],
+        "hidden_indices": [
+          0,
+          5
+        ],
+        "metadata": {
+          "num_variables": 6,
+          "replica_index": 2,
+          "sequence_length": 2000
+        },
+        "mode": "latent",
+        "notes": [
+          "NC8 latent mode masks variables at indices [0, 5]."
+        ],
+        "observed_indices": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "original_variable_names": [
+          "x",
+          "y",
+          "z",
+          "w",
+          "o",
+          "a",
+          "b",
+          "c"
+        ],
+        "sample_id": "replica_002",
+        "sequence_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_data_2.csv",
+        "sequence_shape": [
+          2000,
+          6
+        ],
+        "split": null,
+        "variable_names": [
+          "y",
+          "z",
+          "w",
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "dataset_name": "nc8",
+        "graph_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_struct_3.csv",
+        "ground_truth_shape": [
+          6,
+          6
+        ],
+        "hidden_indices": [
+          0,
+          5
+        ],
+        "metadata": {
+          "num_variables": 6,
+          "replica_index": 3,
+          "sequence_length": 2000
+        },
+        "mode": "latent",
+        "notes": [
+          "NC8 latent mode masks variables at indices [0, 5]."
+        ],
+        "observed_indices": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "original_variable_names": [
+          "x",
+          "y",
+          "z",
+          "w",
+          "o",
+          "a",
+          "b",
+          "c"
+        ],
+        "sample_id": "replica_003",
+        "sequence_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_data_3.csv",
+        "sequence_shape": [
+          2000,
+          6
+        ],
+        "split": null,
+        "variable_names": [
+          "y",
+          "z",
+          "w",
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "dataset_name": "nc8",
+        "graph_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_struct_4.csv",
+        "ground_truth_shape": [
+          6,
+          6
+        ],
+        "hidden_indices": [
+          0,
+          5
+        ],
+        "metadata": {
+          "num_variables": 6,
+          "replica_index": 4,
+          "sequence_length": 2000
+        },
+        "mode": "latent",
+        "notes": [
+          "NC8 latent mode masks variables at indices [0, 5]."
+        ],
+        "observed_indices": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "original_variable_names": [
+          "x",
+          "y",
+          "z",
+          "w",
+          "o",
+          "a",
+          "b",
+          "c"
+        ],
+        "sample_id": "replica_004",
+        "sequence_path": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/datasets/nc8/raw/nc8_data_4.csv",
+        "sequence_shape": [
+          2000,
+          6
+        ],
+        "split": null,
+        "variable_names": [
+          "y",
+          "z",
+          "w",
+          "o",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "split": null
+  },
+  "loss_curve_note": "CUTS+ exposes benchmark-captured training scalars and writes loss.png when available.",
+  "mode": "latent",
+  "output_dir": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/CUTS+/results/latent/nc8",
+  "split": null
+}

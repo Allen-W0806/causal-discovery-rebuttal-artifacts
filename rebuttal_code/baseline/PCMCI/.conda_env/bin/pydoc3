@@ -1,0 +1,5 @@
+#!/storage/home/ydk297/projects/meta_causal_discovery/tigramite/.conda_env/bin/python3.11
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

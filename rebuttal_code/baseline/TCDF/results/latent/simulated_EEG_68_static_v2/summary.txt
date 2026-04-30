@@ -1,0 +1,27 @@
+baseline: TCDF
+dataset: simulated_EEG_68_static_v2
+mode: latent
+split: test
+sample_count: 40
+description: TCDF run target-by-target through the official findcauses path with dataset-specific temporal context.
+
+thresholding:
+  rule: binary_graph = (score_matrix >= threshold)
+  threshold: 4.34741163254
+  accuracy_on_all_edges: 0.924072
+
+aggregate metrics:
+  AUROC mean/std: 0.751040 / 0.013721
+  AUPRC mean/std: 0.217239 / 0.010701
+  F1 mean/std: 0.000000 / 0.000000
+  accuracy mean/std: 0.924072 / 0.000000
+  SHD mean/std: 311.000000 / 0.000000
+  runtime_sec mean/std: 71.383938 / 0.975455
+  runtime_sec total: 2855.357515
+  wall_clock_sec_total: 2861.302621
+
+loss handling: TCDF exposes only per-target final losses from the official path, not a meaningful epoch-wise loss curve.
+
+dataset notes:
+  - The dataset stores adjacency as A[source, target]. For evaluation against the baseline outputs, the graph is transposed into target-by-source orientation.
+  - Generator config path: /storage/home/ydk297/projects/meta_causal_discovery/meta_latent_4.20/scripts/generate_simulated_eeg_dataset_v2.py

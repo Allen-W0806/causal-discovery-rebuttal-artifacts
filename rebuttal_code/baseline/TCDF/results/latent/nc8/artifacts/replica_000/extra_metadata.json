@@ -1,0 +1,53 @@
+{
+  "actual_cuda_used": true,
+  "delays_by_edge": {
+    "b->b": 13,
+    "c->c": 1,
+    "o->b": 12,
+    "o->o": 4,
+    "w->z": 0,
+    "y->o": 12,
+    "y->y": 3,
+    "z->w": 0
+  },
+  "dilation_coefficient": 4,
+  "effective_layers": 2,
+  "epochs": 1000,
+  "final_loss_by_target": {
+    "b": 0.002048278460279107,
+    "c": 0.0067700971849262714,
+    "o": 0.01033197995275259,
+    "w": 8.898811211111024e-05,
+    "y": 0.0014368909178301692,
+    "z": 9.693855645309668e-06
+  },
+  "hidden_layers": 1,
+  "input_csv": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/TCDF/results/latent/nc8/artifacts/replica_000/tcdf_input.csv",
+  "kernel_size": 16,
+  "learning_rate": 0.005,
+  "optimizer": "Adam",
+  "requested_cuda": true,
+  "significance": 0.8,
+  "validated_causes_by_target": {
+    "b": [
+      3,
+      4
+    ],
+    "c": [
+      5
+    ],
+    "o": [
+      0,
+      3
+    ],
+    "w": [
+      1
+    ],
+    "y": [
+      0
+    ],
+    "z": [
+      2
+    ]
+  }
+}

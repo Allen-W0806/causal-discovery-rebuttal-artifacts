@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+export PYTHONPATH="${PYTHONPATH:-}:${SCRIPT_DIR}/.."
+
+NUM_SIM="${NUM_SIM:-50}"
+K="${K:-6}"
+NUM_HIDDEN_LAYERS="${NUM_HIDDEN_LAYERS:-8}"
+HIDDEN_LAYER_SIZE="${HIDDEN_LAYER_SIZE:-12}"
+NUM_EPOCHS_1="${NUM_EPOCHS_1:-1000}"
+NUM_EPOCHS_2="${NUM_EPOCHS_2:-2000}"
+INITIAL_LR="${INITIAL_LR:-0.00001}"
+SEED="${SEED:-0}"
+CUDA_I="${CUDA_I:-0}"
+
+mkdir -p "${SCRIPT_DIR}/logs" "${SCRIPT_DIR}/unicsl_logs"
+cd "${SCRIPT_DIR}"
+
+python "${SCRIPT_DIR}/run_grid_search.py" \
+  --experiment unicsl_fmri_64obs_4latent \
+  --num-sim "${NUM_SIM}" \
+  --K "${K}" \
+  --num-hidden-layers "${NUM_HIDDEN_LAYERS}" \
+  --hidden-layer-size "${HIDDEN_LAYER_SIZE}" \
+  --num-epochs-1 "${NUM_EPOCHS_1}" \
+  --num-epochs-2 "${NUM_EPOCHS_2}" \
+  --initial-lr "${INITIAL_LR}" \
+  --seed "${SEED}" \
+  --cuda-i "${CUDA_I}"

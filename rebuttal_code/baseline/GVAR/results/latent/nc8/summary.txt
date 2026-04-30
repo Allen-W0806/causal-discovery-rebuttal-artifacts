@@ -1,0 +1,26 @@
+baseline: GVAR
+dataset: nc8
+mode: latent
+split: None
+sample_count: 5
+description: GVAR/TRGC with dataset-specific autoregressive order and preserved optimization defaults.
+
+thresholding:
+  rule: binary_graph = (score_matrix >= threshold)
+  threshold: 0.0381723828614
+  accuracy_on_all_edges: 0.938889
+
+aggregate metrics:
+  AUROC mean/std: 0.943434 / 0.011517
+  AUPRC mean/std: 0.539921 / 0.028516
+  F1 mean/std: 0.647619 / 0.042592
+  accuracy mean/std: 0.938889 / 0.012423
+  SHD mean/std: 2.200000 / 0.447214
+  runtime_sec mean/std: 1539.193243 / 2.660007
+  runtime_sec total: 7695.966217
+  wall_clock_sec_total: 7701.608316
+
+loss handling: The current GVAR/TRGC path does not expose one clean training-loss curve suitable for standardized plotting.
+
+dataset notes:
+  - NC8 GT adjacency is evaluated in the CSV orientation already used by the existing NC8 baseline wrappers.

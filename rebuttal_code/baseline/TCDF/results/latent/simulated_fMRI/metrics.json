@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.96484375,
+      "mean": 0.96484375,
+      "min": 0.96484375,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.12515702231029735,
+      "mean": 0.107634618787871,
+      "min": 0.0959627859241028,
+      "std": 0.005957116263590174
+    },
+    "auroc": {
+      "max": 0.7894279970760234,
+      "mean": 0.7579426731893838,
+      "min": 0.7131269680611786,
+      "std": 0.015748461180386156
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 92.05378159601241,
+      "mean": 81.71697458637878,
+      "min": 68.66923091001809,
+      "std": 6.276002497389382
+    },
+    "runtime_sec_total": 4085.848729318939,
+    "shd": {
+      "max": 144.0,
+      "mean": 144.0,
+      "min": 144.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.96484375,
+    "wall_clock_sec_total": 4092.4876517448574
+  },
+  "baseline": "TCDF",
+  "dataset": "simulated_fMRI",
+  "loss_curve_note": "TCDF exposes only per-target final losses from the official path, not a meaningful epoch-wise loss curve.",
+  "mode": "latent",
+  "native_binary_available": true,
+  "num_samples": 50,
+  "split": "test",
+  "threshold": {
+    "accuracy": 0.96484375,
+    "num_edges": 204800,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 5.443373680114747
+  }
+}

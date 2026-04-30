@@ -1,0 +1,26 @@
+baseline: TCDF
+dataset: nc8
+mode: latent
+split: None
+sample_count: 5
+description: TCDF run target-by-target through the official findcauses path with dataset-specific temporal context.
+
+thresholding:
+  rule: binary_graph = (score_matrix >= threshold)
+  threshold: 1.82443243265
+  accuracy_on_all_edges: 0.922222
+
+aggregate metrics:
+  AUROC mean/std: 0.919192 / 0.029449
+  AUPRC mean/std: 0.478810 / 0.194919
+  F1 mean/std: 0.160000 / 0.357771
+  accuracy mean/std: 0.922222 / 0.030429
+  SHD mean/std: 2.800000 / 1.095445
+  runtime_sec mean/std: 13.189227 / 2.784469
+  runtime_sec total: 65.946134
+  wall_clock_sec_total: 70.933728
+
+loss handling: TCDF exposes only per-target final losses from the official path, not a meaningful epoch-wise loss curve.
+
+dataset notes:
+  - NC8 GT adjacency is evaluated in the CSV orientation already used by the existing NC8 baseline wrappers.

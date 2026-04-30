@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.96484375,
+      "mean": 0.96484375,
+      "min": 0.96484375,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.11405648847884585,
+      "mean": 0.10256879340436985,
+      "min": 0.09439408494325967,
+      "std": 0.004089464857410701
+    },
+    "auroc": {
+      "max": 0.7646708417678812,
+      "mean": 0.7323012785368871,
+      "min": 0.7080802968960864,
+      "std": 0.013612973621255249
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 49.73684542393312,
+      "mean": 43.966837099362166,
+      "min": 42.94166752928868,
+      "std": 0.9233536923435712
+    },
+    "runtime_sec_total": 2198.3418549681082,
+    "shd": {
+      "max": 144.0,
+      "mean": 144.0,
+      "min": 144.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.96484375,
+    "wall_clock_sec_total": 2222.413333065808
+  },
+  "baseline": "GVAR",
+  "dataset": "simulated_fMRI",
+  "loss_curve_note": "The current GVAR/TRGC path does not expose one clean training-loss curve suitable for standardized plotting.",
+  "mode": "latent",
+  "native_binary_available": true,
+  "num_samples": 50,
+  "split": "test",
+  "threshold": {
+    "accuracy": 0.96484375,
+    "num_edges": 204800,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 0.3947333693504334
+  }
+}

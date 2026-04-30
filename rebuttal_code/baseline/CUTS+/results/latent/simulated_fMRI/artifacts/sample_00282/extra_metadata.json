@@ -1,0 +1,44 @@
+{
+  "actual_device": "cuda",
+  "artifact_dir": "/storage/home/ydk297/projects/meta_causal_discovery/base_model/CUTS+/results/latent/simulated_fMRI/artifacts/sample_00282/cuts_plus_internal",
+  "available_windows": 237,
+  "batch_size_effective": 128,
+  "batch_size_requested": 128,
+  "config_source": "CUTS+/CUTS_Plus/opt/lorenz_example.yaml",
+  "data_pred": {
+    "concat_h": true,
+    "gru_layers": 1,
+    "lr_data_end": 0.001,
+    "lr_data_start": 0.01,
+    "mlp_hid": 32,
+    "model": "multi_lstm",
+    "pred_step": 1,
+    "prob": true,
+    "shared_weights_decoder": false,
+    "weight_decay": 0.0
+  },
+  "fill_policy": "rate_0.1_after_20",
+  "graph_discov": {
+    "dynamic_sampling_milestones": [
+      0
+    ],
+    "dynamic_sampling_periods": [
+      1
+    ],
+    "end_tau": 0.1,
+    "lambda_s_end": 0.01,
+    "lambda_s_start": 0.1,
+    "lr_graph_end": 0.0001,
+    "lr_graph_start": 0.001,
+    "start_tau": 1.0
+  },
+  "group_policy": "multiply_2_every_20",
+  "input_step": 3,
+  "n_groups_effective": 32,
+  "n_groups_requested": 32,
+  "score_matrix_note": "CUTS+ returns a learned dense graph in target-by-source orientation.",
+  "show_graph_every_effective": 16,
+  "show_graph_every_requested": 16,
+  "supervision_policy": "masked_before_100",
+  "total_epoch": 64
+}

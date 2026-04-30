@@ -1,0 +1,8 @@
+{
+  "source_root": "/storage/home/ydk297/projects/meta_causal_discovery/data/simulated_fMRI/sim_fmri_64obs_4latent_compatible",
+  "source_split": "test",
+  "num_simulations": 50,
+  "output_dir": "/storage/home/ydk297/projects/meta_causal_discovery/uncle/datasets/sim_fmri_68full_4latent",
+  "n_variables": 68,
+  "note": "Full 68-variable data (64 obs + 4 latent) from X.npy and A.npy."
+}

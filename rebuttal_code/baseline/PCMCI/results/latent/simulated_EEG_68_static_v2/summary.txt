@@ -1,0 +1,27 @@
+baseline: PCMCI
+dataset: simulated_EEG_68_static_v2
+mode: latent
+split: test
+sample_count: 40
+description: PCMCI via Tigramite with dataset-specific tau_max and pc_alpha settings.
+
+thresholding:
+  rule: binary_graph = (score_matrix >= threshold)
+  threshold: 300
+  accuracy_on_all_edges: 0.924072
+
+aggregate metrics:
+  AUROC mean/std: 0.523881 / 0.020009
+  AUPRC mean/std: 0.080779 / 0.004553
+  F1 mean/std: 0.000000 / 0.000000
+  accuracy mean/std: 0.924072 / 0.000000
+  SHD mean/std: 311.000000 / 0.000000
+  runtime_sec mean/std: 56.725116 / 1.528204
+  runtime_sec total: 2269.004620
+  wall_clock_sec_total: 2273.364912
+
+loss handling: PCMCI is constraint-based and does not expose a meaningful training-loss curve.
+
+dataset notes:
+  - The dataset stores adjacency as A[source, target]. For evaluation against the baseline outputs, the graph is transposed into target-by-source orientation.
+  - Generator config path: /storage/home/ydk297/projects/meta_causal_discovery/meta_latent_4.20/scripts/generate_simulated_eeg_dataset_v2.py

@@ -1,0 +1,17 @@
+Neural-GC setup for NC8 cMLP baseline
+
+Repository URL: https://github.com/iancovert/Neural-GC
+Local path: /storage/home/ydk297/projects/meta_causal_discovery/cMLP
+Commit hash: c3263d40433aaf3acc94c27a0c1abf9b8e9fcedf
+
+Python executable used: /storage/home/ydk297/miniconda3/bin/python
+Python environment used: existing base conda environment at /storage/home/ydk297/miniconda3
+
+Verified package versions:
+- torch 2.7.0+cu118
+- numpy 2.3.5
+- scipy 1.17.0
+
+Environment note:
+- No additional package installation was required for this baseline because the base conda environment already provided the minimum dependencies required by the Neural-GC repository README.
+- CUDA was not available at runtime, so the cMLP baseline was run on CPU.

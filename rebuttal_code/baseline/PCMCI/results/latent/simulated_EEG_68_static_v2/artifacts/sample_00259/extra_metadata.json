@@ -1,0 +1,6 @@
+{
+  "alpha_level": 0.01,
+  "pc_alpha": 0.2,
+  "tau_max": 3,
+  "tau_min": 1
+}

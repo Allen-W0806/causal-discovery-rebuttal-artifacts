@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.924072265625,
+      "mean": 0.924072265625,
+      "min": 0.924072265625,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.2709329625227562,
+      "mean": 0.2425557207377142,
+      "min": 0.21729469289123496,
+      "std": 0.011903410910936668
+    },
+    "auroc": {
+      "max": 0.7972025298712552,
+      "mean": 0.7719049004574666,
+      "min": 0.7398276323446333,
+      "std": 0.015135350831099561
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 181.70766545226797,
+      "mean": 178.6395173836965,
+      "min": 172.4236978320405,
+      "std": 2.774402874181901
+    },
+    "runtime_sec_total": 7145.5806953478605,
+    "shd": {
+      "max": 311.0,
+      "mean": 311.0,
+      "min": 311.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.924072265625,
+    "wall_clock_sec_total": 7250.305153214838
+  },
+  "baseline": "GVAR",
+  "dataset": "simulated_EEG_68_static_v2",
+  "loss_curve_note": "The current GVAR/TRGC path does not expose one clean training-loss curve suitable for standardized plotting.",
+  "mode": "latent",
+  "native_binary_available": true,
+  "num_samples": 40,
+  "split": "test",
+  "threshold": {
+    "accuracy": 0.924072265625,
+    "num_edges": 163840,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 1.1633313894271853
+  }
+}

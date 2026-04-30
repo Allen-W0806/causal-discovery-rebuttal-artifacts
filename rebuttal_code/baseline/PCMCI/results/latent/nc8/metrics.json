@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.9166666666666666,
+      "mean": 0.9166666666666666,
+      "min": 0.9166666666666666,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.6805555555555555,
+      "mean": 0.48999999999999994,
+      "min": 0.41111111111111115,
+      "std": 0.10937180330425518
+    },
+    "auroc": {
+      "max": 0.9343434343434344,
+      "mean": 0.9161616161616163,
+      "min": 0.8939393939393939,
+      "std": 0.016597653257732298
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 2.6645264117978513,
+      "mean": 2.5380526709370317,
+      "min": 2.368832097388804,
+      "std": 0.127001179128695
+    },
+    "runtime_sec_total": 12.690263354685158,
+    "shd": {
+      "max": 3.0,
+      "mean": 3.0,
+      "min": 3.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.9166666666666666,
+    "wall_clock_sec_total": 13.430016160942614
+  },
+  "baseline": "PCMCI",
+  "dataset": "nc8",
+  "loss_curve_note": "PCMCI is constraint-based and does not expose a meaningful training-loss curve.",
+  "mode": "latent",
+  "native_binary_available": true,
+  "num_samples": 5,
+  "split": null,
+  "threshold": {
+    "accuracy": 0.9166666666666666,
+    "num_edges": 180,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 300.00000000000006
+  }
+}

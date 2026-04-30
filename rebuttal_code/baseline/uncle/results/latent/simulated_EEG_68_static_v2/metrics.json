@@ -1,0 +1,56 @@
+{
+  "aggregate": {
+    "accuracy": {
+      "max": 0.924072265625,
+      "mean": 0.924072265625,
+      "min": 0.924072265625,
+      "std": 0.0
+    },
+    "auprc": {
+      "max": 0.13891552134149385,
+      "mean": 0.1233468939161072,
+      "min": 0.1105597578404857,
+      "std": 0.006916353938032564
+    },
+    "auroc": {
+      "max": 0.5820216032995366,
+      "mean": 0.5557934943740522,
+      "min": 0.5259222604034371,
+      "std": 0.012283476085901085
+    },
+    "f1": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "runtime_sec": {
+      "max": 2.0818591862916946,
+      "mean": 1.5373250811710022,
+      "min": 1.50153775094077,
+      "std": 0.09429425531145162
+    },
+    "runtime_sec_total": 61.49300324684009,
+    "shd": {
+      "max": 311.0,
+      "mean": 311.0,
+      "min": 311.0,
+      "std": 0.0
+    },
+    "threshold_accuracy": 0.924072265625,
+    "wall_clock_sec_total": 75.29690923495218
+  },
+  "baseline": "uncle",
+  "dataset": "simulated_EEG_68_static_v2",
+  "loss_curve_note": null,
+  "mode": "latent",
+  "native_binary_available": false,
+  "num_samples": 40,
+  "split": "test",
+  "threshold": {
+    "accuracy": 0.924072265625,
+    "num_edges": 163840,
+    "rule": "binary_graph = (score_matrix >= threshold)",
+    "threshold": 0.05323410034179688
+  }
+}

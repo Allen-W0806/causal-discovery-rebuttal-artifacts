@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.96484375,
+  "auprc": 0.08141865943703425,
+  "auroc": 0.6289457869433198,
+  "dataset": "simulated_fMRI",
+  "f1": 0.0,
+  "ground_truth_edges": 144,
+  "hidden_variable_count": 4,
+  "mode": "latent",
+  "num_variables": 64,
+  "observed_variable_count": 64,
+  "predicted_edges": 0,
+  "runtime_sec": 0.47298852913081646,
+  "sample_id": "sample_00275",
+  "sequence_length": 240,
+  "shd": 144,
+  "split": "test",
+  "threshold": 0.03617477416992188
+}

@@ -1,0 +1,14 @@
+{
+  "dataset": "NC8",
+  "d": 8,
+  "T": 2000,
+  "description": "Static nonlinear synthetic time series",
+  "data_dir": "data/NC8",
+  "entry": "scripts/run_nc8.sh",
+  "lag": 16,
+  "ts_rank": 4,
+  "tau": 0.5,
+  "lambda_sparse": 8.0,
+  "seed": 0,
+  "nodewise_entry": "scripts/run_nodewise_greedy.sh"
+}

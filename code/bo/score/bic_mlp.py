@@ -1,14 +1,6 @@
 """
 MAML/Reptile-style meta-learning scorer for nonlinear time-series causal discovery.
 
-Provides identical BO-loop interfaces: __call__, eval_graph_return_local,
-eval_batch_return_local, aggregate_batch, last_stats, etc.
-
-Key difference from old scorer:
-  New:  maintain meta-parameters theta_meta per node.  For each candidate graph,
-        copy theta_meta -> inner-loop fine-tune K steps -> evaluate adapted MSE.
-        After a BO round, outer-loop Reptile update moves theta_meta toward the
-        adapted parameters.
 """
 
 import csv

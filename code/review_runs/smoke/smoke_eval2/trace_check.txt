@@ -1,9 +1,0 @@
-[AUROC_AUPRC_TRACE]
-W_shape=(4, 4) W_dtype=float64
-scores_shape=(12,) scores_dtype=float64
-min=0 max=0.500126 mean=0.0790173 std=0.155365
-unique_count(rounded)=4
-percentiles(0,1,5,50,95,99,100)=0,0,0,0,0.39441,0.478983,0.500126
-num_nan=0 num_inf=0 num_zero=9
-y_true_pos=3 y_true_neg=9 pos_rate=0.25
-

@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 BASELINE_ROOT = Path(__file__).resolve().parents[1]
-DATA_ROOT = BASELINE_ROOT / "data"
+DATA_ROOT = BASELINE_ROOT.parent / "data"
 
 DATASETS = {
     "NC8": {

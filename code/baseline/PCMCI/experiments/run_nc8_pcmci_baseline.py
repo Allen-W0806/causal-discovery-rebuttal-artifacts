@@ -28,11 +28,6 @@ from typing import Any
 import numpy as np
 from scipy.stats import rankdata
 
-from tigramite import data_processing as pp
-from tigramite.independence_tests.parcorr import ParCorr
-from tigramite.pcmci import PCMCI
-
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_DIR = Path("data/NC8")
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "results_nc8_baseline"
@@ -477,6 +472,16 @@ def save_replica_outputs(
 
 def main() -> int:
     args = parse_args()
+    try:
+        from tigramite import data_processing as pp  # type: ignore
+        from tigramite.independence_tests.parcorr import ParCorr  # type: ignore
+        from tigramite.pcmci import PCMCI  # type: ignore
+    except ImportError as exc:
+        raise ImportError(
+            "PCMCI baseline requires optional dependency 'tigramite'. "
+            "Install from code/requirements.txt, then rerun."
+        ) from exc
+
     output_dir = args.output_dir.expanduser().resolve()
     logs_dir = output_dir / "logs"
     predicted_root = output_dir / "predicted_graphs"

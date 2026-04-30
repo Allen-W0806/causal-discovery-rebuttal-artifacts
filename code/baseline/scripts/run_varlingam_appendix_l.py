@@ -19,9 +19,6 @@ if str(SCRIPT_DIR) not in sys.path:
 from appendix_l_config import DATASET_NAMES, get_dataset_spec, get_params  # noqa: E402
 from baseline_common import evaluate_score_matrix, load_replicas, write_json, write_matrix_csv, write_rows_csv  # noqa: E402
 
-from lingam.var_lingam import VARLiNGAM  # noqa: E402
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", choices=DATASET_NAMES, required=True)
@@ -42,6 +39,14 @@ def summarize_lagged_adjacency(adjacency_matrices: np.ndarray) -> np.ndarray:
 
 def main() -> int:
     args = parse_args()
+    try:
+        from lingam.var_lingam import VARLiNGAM  # type: ignore
+    except ImportError as exc:
+        raise ImportError(
+            "VARLiNGAM baseline requires optional dependency 'lingam' (and its dependencies). "
+            "Install from code/requirements.txt, then rerun."
+        ) from exc
+
     params = get_params("VARLiNGAM", args.dataset)
     dataset_spec = get_dataset_spec(args.dataset)
     output_dir = (args.output_root / args.dataset).resolve()

@@ -1,0 +1,4 @@
+{
+  "zero_delta_examples": [],
+  "note": "All exact zeros come from edges absent from best_graph; no clamp/rounding path is zeroing selected parents."
+}

@@ -23,7 +23,6 @@ if str(CUTS_PLUS_ROOT) not in sys.path:
 
 from appendix_l_config import DATASET_NAMES, get_dataset_spec, get_params  # noqa: E402
 from baseline_common import evaluate_score_matrix, load_replicas, threshold_by_top_k, write_json, write_matrix_csv, write_rows_csv  # noqa: E402
-from cuts_plus import main as run_cuts_plus  # noqa: E402
 
 
 class NullLogger:
@@ -124,6 +123,14 @@ def standardize(sequence: np.ndarray) -> np.ndarray:
 
 def main() -> int:
     args = parse_args()
+    try:
+        from cuts_plus import main as run_cuts_plus  # type: ignore
+    except ImportError as exc:
+        raise ImportError(
+            "CUTS+ baseline requires optional dependencies (including tensorboard). "
+            "Install from code/requirements.txt, then rerun."
+        ) from exc
+
     params = get_params("CUTS+", args.dataset)
     if args.lr is not None:
         params["learning_rate"] = args.lr

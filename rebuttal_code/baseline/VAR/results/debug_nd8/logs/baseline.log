@@ -1,0 +1,16 @@
+=== VAR bivariate Granger baseline ===
+dataset_type=nd8  n_vars=8
+data_dir=/storage/home/ydk297/projects/time_series/baseline/data/ND8
+lag=16 (UNCLE-paper default for nd8)
+alpha_level=0.05
+replica_count=5
+replicas_in_this_run=1
+
+[replica 0] data=nc8_dynamic_0.csv  struct=nc8_structure_dynamic.npy
+[replica 0] shape=[2000, 8]  rank=7/8  rank_deficient=True  duplicate_pairs=['z==w']  constant_cols=[]  mean=0.1312  std=0.5857  NaN=False  Inf=False
+[replica 0] GT off-diag positives=9 negatives=47
+[replica 0] lag=16  successful_tests=56  failed_tests=0  failure_reasons={}
+[replica 0] score_matrix: min=-0.0000  max=690.7755  mean=45.2786  std=104.5031  unique_vals=43  is_constant=False
+[replica 0] AUROC=0.8605  AUPRC=0.7752  F1=0.5000  SHD=16  predicted_offdiag=23  core_sec=4.97  e2e_sec=4.99
+
+[aggregate] dataset=nd8  lag=16  replicas=1  mean_AUROC=0.8605±0.0000  mean_AUPRC=0.7752±0.0000  mean_F1=0.5000  mean_SHD=16.0

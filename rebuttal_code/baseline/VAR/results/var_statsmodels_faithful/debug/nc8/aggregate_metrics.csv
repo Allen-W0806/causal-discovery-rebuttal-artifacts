@@ -1,0 +1,2 @@
+dataset,lag,replicas,mean_auroc,std_auroc,mean_auprc,std_auprc,mean_runtime_sec
+nc8,16,1,0.5860058309037901,0.0,0.16398455813480445,0.0,0.11211357126012444

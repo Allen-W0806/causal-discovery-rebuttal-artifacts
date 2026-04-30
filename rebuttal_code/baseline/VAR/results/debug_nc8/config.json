@@ -1,0 +1,30 @@
+{
+  "alpha_level": 0.05,
+  "baseline": "VAR-bivariate-Granger",
+  "binary_definition": "binary[src,dst] = 1[pvalue[src,dst] <= alpha_level]",
+  "data_dir": "/storage/home/ydk297/projects/time_series/baseline/data/NC8",
+  "data_paths": [
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_data_0.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_data_1.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_data_2.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_data_3.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_data_4.csv"
+  ],
+  "dataset_type": "nc8",
+  "gt_convention": "gt[src,dst]=1 means src->dst (confirmed by AUROC direction check)",
+  "lag": 16,
+  "lag_source": "UNCLE-paper default for nc8",
+  "max_replicas": 1,
+  "method": "grangercausalitytests (bivariate, statsmodels)",
+  "replica_count": 5,
+  "repo_root": "/storage/home/ydk297/projects/time_series/baseline/VAR",
+  "score_definition": "score[src,dst] = -log(p_value+eps) for 'src Granger-causes dst'",
+  "seed": 0,
+  "struct_paths": [
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_struct_0.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_struct_1.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_struct_2.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_struct_3.csv",
+    "/storage/home/ydk297/projects/time_series/baseline/data/NC8/nc8_struct_4.csv"
+  ]
+}

@@ -1304,7 +1304,6 @@ class NaturalEffects_GraphMediation:
 
             # different numpy-versions behave differently wrt this call:
             # https://numpy.org/devdocs/release/2.0.0-notes.html#np-unique-return-inverse-shape-for-multi-dimensional-inputs
-            # see also https://github.com/numpy/numpy/issues/26738
             labels_y, transformed_y_numpy_version_dependent = np.unique(p_y_values, return_inverse=True, axis=0)
             transformed_y = transformed_y_numpy_version_dependent.squeeze()
 

@@ -20,7 +20,6 @@ from .bootstrap import BootstrapResult
 
 class ABICLiNGAM(_BaseLiNGAM):
     """Implementation of ABIC-LiNGAM Algorithm. [1]_
-    Original code: https://github.com/Yoshimitsu-try/ABIC_LiNGAM
 
     References
     ----------

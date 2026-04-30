@@ -27,6 +27,11 @@ echo "GPU baseline run id: ${RUN_ID}"
 echo "GPU baseline root: ${RUN_ROOT}"
 echo "GPU id: ${GPU_ID}"
 
+# UnCLe reads data from uncle/datasets/ (hardcoded upstream); create symlink to data/.
+if [[ ! -e "${ROOT}/uncle/datasets" ]]; then
+  ln -s "${ROOT}/data" "${ROOT}/uncle/datasets"
+fi
+
 run_uncle() {
   local dataset="$1"
   local experiment="$2"

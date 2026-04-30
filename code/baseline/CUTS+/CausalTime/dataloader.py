@@ -141,7 +141,7 @@ def load_graph(path,threshold = 0.25, save_graph = False, save_map = False):
     file_without_extension, extension = os.path.splitext(filename)
     if save_graph:
         folder_path ="{}/{}".format(r"./output", file_without_extension)
-        #folder_path = 'D:\study\progect\UNN\dataset\code\output\\' + file_without_extension
+
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
         plt.imshow(mask, cmap='Blues')

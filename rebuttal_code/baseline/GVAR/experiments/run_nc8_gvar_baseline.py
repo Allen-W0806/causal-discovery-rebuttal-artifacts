@@ -39,7 +39,7 @@ if str(REPO_ROOT) not in sys.path:
 from training import training_procedure_trgc  # noqa: E402
 
 
-DEFAULT_DATA_DIR = Path("/storage/home/ydk297/projects/meta_causal_discovery/data/nc8")
+DEFAULT_DATA_DIR = Path("data/NC8")
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "results_nc8_baseline"
 T_CRIT_95_DF4 = 2.7764451051977987
 
@@ -529,7 +529,7 @@ def build_evaluation_protocol(args: argparse.Namespace) -> str:
             "# Evaluation Protocol",
             "",
             "## Data",
-            "- Dataset path: `/storage/home/ydk297/projects/meta_causal_discovery/data/nc8`",
+            "- Dataset path: `data/NC8/` (relative to baseline root)",
             "- Replicas used: all five `nc8_data_*.csv` files with their matching `nc8_struct_*.csv` graphs",
             "- GT is evaluated separately for each replica against its corresponding structure CSV",
             "- Each replica is standardized independently per variable before running GVAR, following the style used in the repo's experiment scripts",

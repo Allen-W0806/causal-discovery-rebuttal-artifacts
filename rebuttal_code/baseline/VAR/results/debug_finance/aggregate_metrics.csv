@@ -1,2 +1,0 @@
-dataset_type,lag,replicas,mean_auroc,std_auroc,mean_auprc,std_auprc,mean_f1,std_f1,mean_shd,std_shd,mean_failed_tests,mean_core_runtime_sec,mean_e2e_runtime_sec
-finance,5,1,0.9200862068965517,0.0,0.48567815975914674,0.0,0.07619047619047618,0.0,485.0,0.0,0.0,13.260691110044718,13.307203592266887

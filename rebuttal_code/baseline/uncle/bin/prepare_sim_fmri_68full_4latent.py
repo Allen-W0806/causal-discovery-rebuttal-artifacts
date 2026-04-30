@@ -11,14 +11,8 @@ import numpy as np
 import pandas as pd
 
 
-DEFAULT_SOURCE_ROOT = Path(
-    "/storage/home/ydk297/projects/meta_causal_discovery/meta_latent_4.20/data/"
-    "simulated_fMRI/sim_fmri_64obs_4latent_compatible"
-)
-DEFAULT_OUTPUT_DIR = Path(
-    "/storage/home/ydk297/projects/meta_causal_discovery/uncle/datasets/"
-    "sim_fmri_68full_4latent"
-)
+DEFAULT_SOURCE_ROOT = Path("data/simulated_fMRI/sim_fmri_64obs_4latent_compatible")
+DEFAULT_OUTPUT_DIR = Path("uncle/datasets/sim_fmri_68full_4latent")
 
 
 def parse_args() -> argparse.Namespace:

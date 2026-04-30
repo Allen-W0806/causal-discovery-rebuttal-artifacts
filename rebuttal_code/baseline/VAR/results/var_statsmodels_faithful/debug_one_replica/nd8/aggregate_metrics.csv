@@ -1,2 +1,0 @@
-dataset,lag,replicas,mA_mean_auroc,mA_std_auroc,mA_mean_auprc,mA_mean_runtime_sec,mB_mean_auroc,mB_std_auroc,mB_mean_auprc,mB_mean_runtime_sec,mC_mean_auroc,mC_std_auroc,mC_mean_auprc,mC_mean_runtime_sec,mD_mean_auroc,mD_std_auroc,mD_mean_auprc,mD_mean_runtime_sec
-nd8,16,1,0.5,0.0,0.47142506053912087,0.6799853248521686,0.7245862884160756,0.0,0.34479115014348555,0.05135081009939313,0.8557919621749409,0.0,0.7276936026936026,0.870681534986943,0.8605200945626478,0.0,0.7752364919031586,4.300733828917146

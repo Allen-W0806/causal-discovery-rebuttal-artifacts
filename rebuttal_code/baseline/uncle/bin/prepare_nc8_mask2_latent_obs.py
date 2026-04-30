@@ -21,12 +21,8 @@ from pathlib import Path
 import pandas as pd
 
 
-DEFAULT_SOURCE_ROOT = Path(
-    "/storage/home/ydk297/projects/meta_causal_discovery/meta_latent_4.13/data/nc8"
-)
-DEFAULT_OUTPUT_DIR = Path(
-    "/storage/home/ydk297/projects/meta_causal_discovery/uncle/datasets/NC8_mask2_latent_obs"
-)
+DEFAULT_SOURCE_ROOT = Path("data/NC8")
+DEFAULT_OUTPUT_DIR = Path("uncle/datasets/NC8_mask2_latent_obs")
 DEFAULT_HIDDEN_INDICES = [0, 5]
 DATA_PATTERN = "nc8_mask2_latent_obs_data_{i}.csv"
 STRUCT_PATTERN = "nc8_mask2_latent_obs_struct_{i}.csv"

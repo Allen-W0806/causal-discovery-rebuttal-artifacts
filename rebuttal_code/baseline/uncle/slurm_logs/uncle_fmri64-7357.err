@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/storage/home/ydk297/projects/meta_causal_discovery/uncle/bin/run_grid_search.py", line 125, in <module>
-    run_grid_search(datasets=datasets, K=args.K, structures=structures,
-  File "/storage/home/ydk297/projects/meta_causal_discovery/uncle/bin/experimental_utils.py", line 50, in run_grid_search
-    os.mkdir(path=logdir)
-FileNotFoundError: [Errno 2] No such file or directory: 'logs/_unicsl_fmri_64obs_4latent2026-04-20_1776715444_gvar'
-
-ERROR conda.cli.main_run:execute(127): `conda run env LD_LIBRARY_PATH=/storage/home/ydk297/miniconda3/envs/uncle_clean/lib python run_grid_search.py --experiment unicsl_fmri_64obs_4latent --num-sim 50 --K 6 --num-hidden-layers 8 --hidden-layer-size 12 --num-epochs-1 1000 --num-epochs-2 2000 --initial-lr 0.00001 --seed 0 --cuda-i 0` failed. (See above for error)

@@ -1,6 +1,0 @@
-{
-  "accuracy": 0.96484375,
-  "num_edges": 204800,
-  "rule": "binary_graph = (score_matrix >= threshold)",
-  "threshold": 1.2198462486267092
-}

@@ -1,1 +1,0 @@
-The current GVAR/TRGC path does not expose one clean training-loss curve suitable for standardized plotting.

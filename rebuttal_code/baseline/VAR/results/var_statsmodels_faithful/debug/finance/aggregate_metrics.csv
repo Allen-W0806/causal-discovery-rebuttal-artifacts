@@ -1,2 +1,0 @@
-dataset,lag,replicas,mean_auroc,std_auroc,mean_auprc,std_auprc,mean_runtime_sec
-finance,5,1,0.5539655172413793,0.0,0.05902199736457205,0.0,0.07262478210031986

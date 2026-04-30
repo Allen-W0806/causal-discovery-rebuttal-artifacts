@@ -6,15 +6,15 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
 #SBATCH --time=5-00:00:00
-#SBATCH --output=/storage/home/ydk297/projects/meta_causal_discovery/uncle/slurm_logs/%x-%j.out
-#SBATCH --error=/storage/home/ydk297/projects/meta_causal_discovery/uncle/slurm_logs/%x-%j.err
+#SBATCH --output=slurm_logs/%x-%j.out
+#SBATCH --error=slurm_logs/%x-%j.err
 
 set -euo pipefail
 
-cd /storage/home/ydk297/projects/meta_causal_discovery/uncle/bin
+cd "$(dirname "${BASH_SOURCE[0]}")"
 export PYTHONPATH="${PYTHONPATH:-}:../"
 
-conda run -n uncle_clean env LD_LIBRARY_PATH=/storage/home/ydk297/miniconda3/envs/uncle_clean/lib python run_grid_search.py \
+conda run -n uncle_clean python run_grid_search.py \
   --experiment unicsl_fmri_64obs_4latent \
   --num-sim 50 \
   --K 6 \

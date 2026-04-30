@@ -34,7 +34,7 @@ from tigramite.pcmci import PCMCI
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DATA_DIR = Path("/storage/home/ydk297/projects/meta_causal_discovery/data/nc8")
+DEFAULT_DATA_DIR = Path("data/NC8")
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "results_nc8_baseline"
 EPS = 1e-300
 
@@ -359,7 +359,7 @@ def build_evaluation_protocol(alpha_level: float, tau_min: int, tau_values: list
             "# Evaluation Protocol",
             "",
             "## Data",
-            "- Dataset path: `/storage/home/ydk297/projects/meta_causal_discovery/data/nc8`",
+            "- Dataset path: `data/NC8/` (relative to baseline root)",
             "- Replicas used: all available `nc8_data_*.csv` files with their matching `nc8_struct_*.csv` graphs",
             "- Ground truth is evaluated separately for each replica against its corresponding structure CSV",
             "",

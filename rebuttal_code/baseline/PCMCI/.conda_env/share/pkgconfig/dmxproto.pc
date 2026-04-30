@@ -1,7 +1,0 @@
-prefix=/storage/home/ydk297/projects/meta_causal_discovery/tigramite/.conda_env
-includedir=${prefix}/include
- 
-Name: DMXProto
-Description: DMX extension headers
-Version: 2.3.1
-Cflags: -I${includedir}

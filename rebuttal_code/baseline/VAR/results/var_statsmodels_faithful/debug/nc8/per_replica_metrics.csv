@@ -1,2 +1,0 @@
-dataset,replica,lag,T,N,fit_failed,coefs_finite,coefs_max_abs,gt_offdiag_pos,gt_offdiag_neg,score_std,auroc,auprc,runtime_sec
-nc8,0,16,2000,8,False,True,246579613840.9988,7,49,46873474550.67162,0.5860058309037901,0.16398455813480445,0.11211357126012444

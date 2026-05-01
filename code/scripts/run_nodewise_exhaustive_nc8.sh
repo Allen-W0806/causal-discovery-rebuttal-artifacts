@@ -1,19 +1,21 @@
 #!/usr/bin/env bash
-# Run low-rank BO (main method) on NC8 benchmark.
-# Usage: bash scripts/run_nc8.sh [REPLICA=0] [SEED=0]
-# Example: bash scripts/run_nc8.sh 0 0
+# Run node-wise exhaustive oracle comparator on NC8 benchmark.
+# Evaluates all d x 2^d = 8 x 256 = 2048 parent-mask combinations.
+# Usage: bash scripts/run_nodewise_exhaustive_nc8.sh [REPLICA=0] [SEED=0]
+# Example: bash scripts/run_nodewise_exhaustive_nc8.sh 0 0
 set -euo pipefail
 export KMP_DUPLICATE_LIB_OK=TRUE
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 REPLICA="${1:-0}"
 SEED="${2:-0}"
-OUT="$ROOT/outputs/low_rank_bo/replica${REPLICA}"
+OUT="$ROOT/outputs/nodewise_exhaustive/replica${REPLICA}"
 cd "$ROOT"
 
-python scripts/run_bo.py \
+python scripts/run_nodewise_exhaustive_nc8.py \
   --dataset NC8 \
   --data_dir data/NC8 \
+  --outdir "$OUT" \
   --replica "$REPLICA" \
   --T 2000 \
   --d 8 \
@@ -24,22 +26,13 @@ python scripts/run_bo.py \
   --inner_step_count 10 \
   --inner_lr 0.01 \
   --inner_batch_size 0 \
-  --ts_rank 4 \
-  --tau 0.5 \
+  --inner_optimizer adam \
   --lambda_sparse 8 \
   --score_type mlp \
-  --eval 8000 \
-  --batch_size 32 \
-  --n_cands 10000 \
-  --n_grads 10 \
-  --hidden_size 64 \
-  --dropout 0.1 \
   --seed "$SEED" \
   --meta_update_every 10 \
   --meta_batch_size 8 \
   --meta_recent_window 20 \
   --meta_inner_lr 0.001 \
   --meta_outer_lr 0.0001 \
-  --logdir "$OUT" \
-  --exp_name "low_rank_bo_nc8_rep${REPLICA}_seed${SEED}" \
   --no-plot

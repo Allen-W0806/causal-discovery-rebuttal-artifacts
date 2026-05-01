@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import os
 import sys
@@ -43,6 +44,28 @@ def _jsonable_score(value):
     if arr.size == 1:
         return float(arr.reshape(-1)[0])
     return arr.astype(float).tolist()
+
+
+def _write_metrics_csv(path: str, row: dict) -> None:
+    keys = [
+        "method",
+        "dataset",
+        "replica",
+        "seed",
+        "lag",
+        "runtime",
+        "n_evals",
+        "auroc",
+        "auprc",
+        "f1",
+        "shd",
+        "weighted_f1",
+        "weighted_shd",
+    ]
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        writer.writerow({key: row.get(key, "") for key in keys})
 
 
 def main() -> None:
@@ -166,6 +189,7 @@ def main() -> None:
         random_state=args.seed,
         ts_rank=args.ts_rank,
         tau=args.tau,
+        lambda_sparse=args.lambda_sparse,
         n_cands=args.n_cands,
         n_grads=args.n_grads,
         lr=args.lr,
@@ -204,20 +228,47 @@ def main() -> None:
     weighted = evaluate_uncle_style(perturbation, GT, ignore_diag=True, run_dir=run_dir)
     print_comparison_table(weighted, dataset_name="NC8")
 
+    flat_metrics = {
+        "method": "low_rank_bo",
+        "dataset": args.dataset,
+        "replica": int(args.replica),
+        "seed": int(args.seed),
+        "lag": int(args.lag),
+        "runtime": float(runtime_sec),
+        "n_evals": int(max_evals),
+        "auroc": weighted.get("AUROC"),
+        "auprc": weighted.get("AUPRC"),
+        "f1": metrics.get("F1", metrics.get("f1")),
+        "shd": metrics.get("SHD", metrics.get("shd")),
+        "weighted_f1": weighted.get("F1"),
+        "weighted_shd": weighted.get("SHD"),
+    }
     results = {
+        "method": "low_rank_bo",
         "dataset": "NC8",
         "replica": int(args.replica),
         "seed": int(args.seed),
         "runtime_sec": float(runtime_sec),
+        "runtime": float(runtime_sec),
         "best_score": None if bo_result.get("history_best_total_score") is None else float(bo_result["history_best_total_score"]),
         "score_S": _jsonable_score(bo_result.get("score_S")),
         "n_evals": int(max_evals),
+        "auroc": flat_metrics["auroc"],
+        "auprc": flat_metrics["auprc"],
+        "f1": flat_metrics["f1"],
+        "shd": flat_metrics["shd"],
+        "weighted_f1": flat_metrics["weighted_f1"],
+        "weighted_shd": flat_metrics["weighted_shd"],
+        "best_consistency": bo_result.get("best_consistency"),
         "metrics": metrics,
         "weighted_metrics": weighted,
         "config": vars(args),
     }
     with open(os.path.join(run_dir, "results.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
+    with open(os.path.join(run_dir, "metrics.json"), "w", encoding="utf-8") as f:
+        json.dump(flat_metrics, f, indent=2)
+    _write_metrics_csv(os.path.join(run_dir, "metrics.csv"), flat_metrics)
 
     print(f"Saved run to: {run_dir}")
     print(json.dumps(results, indent=2))

@@ -10,5 +10,5 @@
   "tau": 0.5,
   "lambda_sparse": 8.0,
   "seed": 0,
-  "nodewise_entry": "scripts/run_nodewise_greedy.sh"
+  "nodewise_entry": "scripts/run_nodewise_greedy_nc8.sh"
 }

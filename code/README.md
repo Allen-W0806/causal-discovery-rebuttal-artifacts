@@ -37,11 +37,3 @@ Optional:
 bash scripts/run_all_replicas_nc8.sh 0
 ```
 
-## Fixed settings
-
-- dataset: NC8
-- lag: 16
-- eval: 8000
-- batch size: 32
-- seed: 0
-- replicas: 0--4

@@ -29,7 +29,7 @@ python scripts/run_nodewise_greedy.py \
   --tau 0.5 \
   --lambda_sparse 8 \
   --score_type mlp \
-  --eval 4000 \
+  --eval 8000 \
   --batch_size 32 \
   --n_cands 10000 \
   --n_grads 10 \
